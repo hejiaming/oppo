@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="{$desc['keywords']}">
+<meta name="description" content="{$desc['description']}">
+<title>{$desc['title']}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/common.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/others.css">
+<!--[if lte IE 6]><script src="http://store.oppomobile.com/js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script> <script type="text/javascript"> DD_belatedPNG.fix('div, ul, li, input ,h1, a,dd,b'); </script> <![endif]-->
+<script src="__PUBLIC__/Home/js/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+	var baseHost='http://store.oppomobile.com';
+	var styleHost='http://store.oppomobile.com';
+	//加入google统计代码如下：
+	/*var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-35147887-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();*/
+</script>
+</head>
+
+<body>
+	<!--  header   -->
+	<div class="header">
+        <div class="nav">
+            <ul>
+           	    <li class="first"><a href="{:U('App/index')}">官网</a></li>
+                <li class="divide">|</li>
+                <li><span>软件商店</span></li>
+                <li class="divide">|</li>
+                <li><a target="_blank" href="#">同步</a></li>
+                <li class="divide">|</li>
+                <li><a target="_blank" href="#">找回手机</a></li>
+                <li class="divide">|</li>
+                <li><a target="_blank" href="#">笔记</a></li>
+                <li class="divide">|</li>
+                <li><a target="_blank" href="#">网盘</a></li>
+            </ul>
+
+            <if condition="$_SESSION['login'] eq null">
+            <div class="account_info" style="display: block;">您还没登录？&nbsp;&nbsp;<a href="{:U('Login/index')}">[登录]</a>  <a href="{:U('Add/index')}">[注册]</a></div>
+        <else />
+            <div class="account_info" style="display:none;">欢迎您，<span></span>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" id="account_logout">[退出]</a> | <a href="{}">个人中心</a></div>
+        </if>
+
+            <div class="clear"></div>
+        </div>
+        <div class="title">
+            <a class="logo" href="#"></a>
+            <a class="gw" target="_blank" href="{:U('Index/index')}" title="点击进入oppo官网"></a>
+            <a class="develop" href="#"></a>
+        </div>
+	</div>
+	   
+    <!-- 本页导航及搜索栏 -->
+    <div class="nav_this">
+        <ul id="menu">
+            <li class="menu_first">
+            	<a href="{:U('App/index')}" class="click first">首页</a>
+            </li>
+            <li class="menu_soft">
+            	<a href="#">应用</a>
+            	<div class="submenu">
+                	<div class="soft_menu_hover"></div>
+                	<div class="submenu_top"></div>
+                    <dl class="submenu_content">
+                	   <dd><a href="#"></a></dd>
+                	   <div class="clear"></div>
+                    </dl>
+                    <div class="submenu_bottom"></div>
+                </div>
+            </li>
+            <li class="menu_soft">
+            	<a href="#">游戏</a>
+            	<div class="submenu">
+                	<div class="soft_menu_hover"></div>
+                	<div class="submenu_top"></div>
+                    <dl class="submenu_content">
+                        <dd><a href="#"></a></dd>
+                	   <div class="clear"></div>
+                    </dl>
+                    <div class="submenu_bottom"></div>
+                </div>
+            </li>
+			<li class="menu_first">
+				<a href="#">专题</a>
+			</li>
+        </ul>
+        <div class="search">
+            <form>
+               <input type="text" name="name" value="搜索" class="search_text">
+               <input type="submit" class="search_a" value="" style="padding-top: 6px;padding-left: 18px;margin-left: 7px;width: 25px" />
+            </form>
+            
+        </div>
+        <div class="search_clew" id="search_clew">
+	        <ul class="search_clew_ul" id="search_clew_ul"></ul>
+	    </div>
+    </div>
+
+	<!-- 正文 -->
+    <div class="content">	
+    	<div class="bread_nav">当前位置：
+    		<span><a href="{:U('App/index')}">首页</a></span> &gt; 
+    	    		<span><a href="#">{$data['0']['name']}</a></span> &gt; 
+    		
+    	</div>
+        <div class="soft_detail">
+        	<div class="detail_top"></div>
+            <div class="detail_content">
+            	<!-- part1  应用信息简介 -->
+            	<div class="soft_info">
+                	<div class="soft_info_left">
+                    	<img src="__PUBLIC__/{$data['0']['pic']}" class="">
+                    </div>
+                    <div class="soft_info_middle">
+                    	<h3>{$data['0']['name']}</h3>
+                        <div class="soft_info_nums">
+                        	<div class="star_40"></div>
+                            
+                            &nbsp;&nbsp;999000万+次下载  
+                        </div>
+                        <ul class="soft_info_more">
+                        	<li>发布时间：{$data['0']['time']}</li>
+                            <li>大小：{$data['0']['mb']}M</li>
+                            <li>版本：{$data['0']['edition']}</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <a class="detail_down" href="{:U('Download/index',array('id'=>$data['0']['id']))}">下载到电脑</a>
+						
+                    </div>
+                    <div class="soft_info_right">
+                                        	<div class="erwei"><img src="__PUBLIC__/Home/images/erwei.jpg"></div>
+                        <a href="javascript:void(0)">如何使用？</a>
+                                        </div>
+                    <div class="clear"></div>
+					
+					                </div>
+                
+                <!-- part2 应用截图 -->
+                <div class="detail_title">应用截图</div>
+                <div class="soft_img">
+                	<div class="soft_img_container">
+                        <ul style="width: 1005px;" class="img_list">
+
+                        <li><img src="__PUBLIC__/{$data['0']['pic1']}" alt="{$data['0']['name']}" class="" haswebp=""></li>
+                        <li><img src="__PUBLIC__/{$data['0']['pic2']}" alt="{$data['0']['name']}" class="" haswebp=""></li>
+                        <li><img src="__PUBLIC__/{$data['0']['pic3']}" alt="{$data['0']['name']}" class="" haswebp=""></li>
+
+                        </ul>
+                    </div>
+                    <a onclick="pre()" id="pre_img" class="pre_img_end" href="javascript:void(0)"></a>
+                    <a onclick="next()" id="next_img" class="next_img" href="javascript:void(0)"></a>
+                </div>
+                
+                <!-- part3 应用文字详细介绍 -->
+                <div class="detail_title">应用介绍</div>
+                <div class="soft_word">
+                	
+                	<p>应用介绍：<br>
+                    {$data['0']['abstruct']}
+                    </p>
+
+                    <a class="detail_down" href="{:U('Download/index',array('id'=>$data['0']['id']))}">下载到电脑</a>
+                </div>
+                
+                <!-- part4  评论 -->
+
+            <div class="detail_bottom"></div>       
+        </div>
+        </div>
+        
+        <!-- 右侧相关推荐 -->
+        <div class="soft_about">
+        	<div class="soft_about_top title_common">
+            	<h1>相关推荐</h1><div></div>
+            </div>
+            <div class="soft_about_content">
+            			<div class="li_about">
+        <!--<foreach name="tj" item="vo">
+    	<div class="li_about_left">
+        	<a href="__PUBLIC/{$vo['pic']}" class="" title="{$vo['name']}" alt="{$vo['name']}">
+            </a>
+        </div>
+        <div class="li_about_middle">
+        	<h3>
+        		<a href="{:U('App/appdetail',array('id'=>$vo['id']))}">
+        			QQ
+        		</a>
+        	</h3>
+            <div class="star_40"></div>
+            <p>78900万+次下载</p>
+            <a href="###" class="down" onclick="myDownload(10057246, '1149_1')">下载</a>
+        </div>
+        </foreach>-->
+        <div class="clear"></div>
+	
+	</div>
+
+            </div>
+            <div class="soft_about_bottom"></div>
+        </div>
+        <div class="clear"></div>
+        <input id="product_author" value="d41d8cd98f00b204e9800998ecf8427e" type="hidden">
+		
+    </div>
+<!-- 弹出二维码说明  -->
+<div class="pop_erwei">
+ 	<div class="pop_erwei_top">
+     	<span>如何使用二维码</span>
+         <a id="erwei_close"></a>
+     </div>
+     <div class="pop_erwei_content">
+     	<h3>使用二维码下载软件更加快捷，方便，只需神奇的一扫，即可实现在手机上快速下载</h3>
+         <p>1. 使用NearMe市场的二维码扫描功能。</p>
+         <img src="__PUBLIC__/Home/images/erwei_img1.png">
+         <p>2. 使用快拍二维码，可以实现二维码快速扫描下载软件，也可以生成各种二维码分享给好友。</p>
+         <img src="__PUBLIC__/Home/images/erwei_img2.png">
+         <a href="javascript:void(0)" class="erwei_down" onclick="detailInfoDownload('125904')">免费下载</a>
+         <a class="erwei_iknown"></a>
+     </div>
+     <div class="pop_erwei_bottom"></div>
+</div>
+<!-- 登录框  -->
+<!--<div class="pop_login">
+	<div class="login_top">
+    	<span>用户登录</span>
+        <a href="javascript:void(0)"></a>
+    </div>
+    <div class="login_content">
+    	<p>您可以用OPPO或者NearMe账号登录</p>
+    	<ul>
+        	<li><label>账号：</label><input class="account_text" type="text"> <a target="_blank" tabindex="-1" href="http://uc.nearme.com.cn/usercenter/Reg.do?backurl=http%3A%2F%2Fstore.oppomobile.com%2Fproduct%2F0010%2F054%2F827_1.html%3Ffrom%3D1125_2">注册新账号</a></li>
+            <li><label>密码：</label><input value="" type="password"> <a target="_blank" tabindex="-1" href="http://uc.nearme.com.cn/usercenter/GotoA2101.do?backurl=http%3A%2F%2Fstore.oppomobile.com%2Fproduct%2F0010%2F054%2F827_1.html%3Ffrom%3D1125_2">忘记密码</a></li>
+        </ul>
+        <a href="javascript:void(0)" class="btn" id="logon_btn">登录</a><span id="login_info"></span>
+    </div>
+</div>-->
+<div class="pop_bg"></div>
+<!--[if IE 6]>
+<script type="text/javascript">
+//<![CDATA[
+try {
+  document.execCommand("BackgroundImageCache", false, true);
+} catch(e) {}
+//]]>
+</script>
+<style>
+	.back_top{position:absolute;bottom:none;
+	top:expression(eval((document.compatMode&&document.compatMode=="CSS1Compat")?documentElement.scrollTop+documentElement.clientHeight-this.clientHeight-1-100:document.body.scrollTop+document.body.clientHeight-this.clientHeight-1-100));}
+</style>
+<![endif]-->
+<!--  footer   --> 
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js-3Fabb5447d652d77cd655cf76b6ae48eb3' type='text/javascript'%3E%3C/script%3E"));
+	</script><script src="__PUBLIC/Home/js/h.js" type="text/javascript"></script>
+	<a style="display: block;" title="返回顶部" href="javascript:void(0)" class="back_top"></a>
+    <div class="footer">
+		<div class="footer_center">
+			<a target="_blank" href="http://white.anva.org.cn/"><div class="icon_anva"></div></a>
+			<a target="_blank" href="http://white.anva.org.cn/"><div class="icon_bmd"></div></a>
+			<div><a href="http://www.oppomobile.com/about/coperation.html?2.4">商务合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.oppomobile.com/about/copyright.html">版权说明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.oppomobile.com/about/agreement.html">使用协议</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.oppomobile.com/about/contact.html">联系我们</a></div>
+			<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				{$desc['copyright']}</div>
+		</div>
+   </div>
+	<input style="display:none;" id="userId" value="" type="hidden">   
+
+	<script src="__PUBLIC/Home/js/jquery-1.js" type="text/javascript"></script>
+	<script src="__PUBLIC/Home/js/statistic.js" type="text/javascript"></script>
+	<script src="__PUBLIC/Home/js/common.js" type="text/javascript"></script><img src="__PUBLIC/Home/js/ClientDownloadByUrl.txt" style="display:none">
+		<script src="__PUBLIC/Home/js/comment.js" type="text/javascript"></script>
+		<script src="__PUBLIC/Home/js/lazyload.js" type="text/javascript"></script>
+</body></html>

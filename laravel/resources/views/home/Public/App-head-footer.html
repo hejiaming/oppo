@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="keywords" content="{$desc['keywords']}">
+<meta name="description" content="{$desc['description']}">
+<title>OPPO软件商店-安卓软件商店,提供一站式手机软件、手机游戏、手机主题免费下载-NearMe软件商店</title>
+
+<block name="link">
+
+
+</block>
+</head>
+
+<body>
+  <!--  header   -->
+  <div class="header">
+        <div class="nav">
+            <ul>
+                <li class="first"><a href="http://www.oppomobile.com/">官网</a></li>
+                <li class="divide">|</li>
+                <li><span>软件商店</span></li>
+                <li class="divide">|</li>
+                <li><a target="_top" href="http://sync.yun.oppo.com/">同步</a></li>
+                <li class="divide">|</li>
+                <li><a target="_top" href="http://find.yun.oppo.com/">找回手机</a></li>
+                <li class="divide">|</li>
+                <li><a target="_top" href="http://note.yun.oppo.com/">笔记</a></li>
+                <li class="divide">|</li>
+                <li><a target="_top" href="http://pan.yun.oppo.com/">网盘</a></li>
+            </ul>
+            <if condition="$_SESSION['isLogin'] neq 1">
+              <div id="account_info" class="account_info" style="display: none;">您还没登录？&nbsp;&nbsp;<a href="{:U('Home/Login/login')}">[登录]</a><a href="{:U('Home/ZhuCe/index')}">[注册]</a></div>
+            <else />
+             <div id="account_logged" class="account_info" style="display: block;">欢迎您，<span>{$Think.session.master.username}</span>&nbsp;&nbsp;&nbsp;<a href="{:U('Home/Login/logout')}" id="account_logout">[退出]</a> | <a href="{:U('Home/Person/person_index')}">个人中心</a></div>
+            </if>
+            <div class="clear"></div>
+        </div>
+    <div class="title">
+      <a class="logo" href="http://store.oppomobile.com/index.html"></a>
+      <a class="gw" target="_top" href="http://www.oppo.com/?utm_source=NearMe&amp;utm_medium=StoreFirstNavigationTab&amp;utm_campaign=DaiyFlow" title="点击进入oppo官网"></a>
+      <a class="develop" href="http://open.oppomobile.com/"></a>
+    </div>
+  </div>
+     
+    <!-- 本页导航及搜索栏 -->
+    <div class="nav_this">
+        
+        <ul id="menu">
+            <li class="menu_first">
+              <a href="" class="click first">首页</a>
+            </li>
+           <foreach name="cate" item="vo">
+            <li class="menu_soft">
+              <a href="#">{$vo['name']}</a>
+                <div class="submenu">
+                  <div class="soft_menu_hover"></div>
+                  <div class="submenu_top"></div>
+                    <dl class="submenu_content">
+                    <foreach name="vo['value']" item="vo1">
+                      <dd><a href="">{$vo1['name']}</a></dd>
+                    </foreach>
+                      <div class="clear"></div>
+                    </dl>
+                    <div class="submenu_bottom"></div>
+                </div>
+            </li>
+            </foreach>  
+          
+        </ul>
+    
+        <div class="search">
+               <input id="search_text" value="请输入关键字" class="search_text" type="text">
+               <a class="search_a" id="header_search"></a>
+               <input id="search_from" value="index" type="hidden">
+        </div>
+        <div class="search_clew" id="search_clew">
+          <ul class="search_clew_ul" id="search_clew_ul"></ul>
+      </div>
+    </div>
+    <block name="content"></block>
+    <!--  footer   --> 
+    <block name="footlink">
+
+    </block>
+  
+  <a style="display: block;" title="返回顶部" href="javascript:void(0)" class="back_top"></a>
+    <div class="footer">
+    <div class="footer_center">
+      <a target="_top" href="http://white.anva.org.cn/"><div class="icon_anva"></div></a>
+      <a target="_top" href="http://white.anva.org.cn/"><div class="icon_bmd"></div></a>
+      <div>
+        <foreach name="res" item="vo">
+          <a href="{$vo['link']}">{$vo['name']}</a>
+        </foreach>
+      </div>
+   </div>
+  <input style="display: none;" id="userId" value="U29154145" type="hidden">   
+
+  
+</body>
+</html>

@@ -1,0 +1,41 @@
+(function(){
+    var CLICKI_CF = {
+        version: '142604289',
+        host: 'sitemonitor.cn.miaozhen.com',
+        cdn_host: 'sitemonitor.cn.miaozhen.com',
+        site_id: Number('45193'),
+        site_name: "OPPO%u5B98%u7F51",
+        visitor_id: '1456822823173176',
+        millisecond: '1456822915705422',
+        session_key: 'dm3hno',
+        time: '1456822915705',
+        is_logined: true,
+        rf_key: "ecef7hyhxk",
+        track_type: Number('0')||0,
+        cross_domains: "www.oppo.com,account.oppo.com,theme.oppo.com,career.oppo.com,store.opposhop.com.cn,bbs.myoppo.com,store.oppo.com,n1.oppo.com",
+        jscode: {"max_id":3,"items":{"id1":{"name":"X909固件升级下载","url":["http://www.oppo.com/index.php?q=software/view&sw_id=667"],"exclude":[],"code":"Clicki.use('jquery' , function($){ \n\t$('#download').click(function(){ \n\t\tCClicki._trackEvent({\n\t\t\ttype: 2,\n\t\t\tlabels: [\n\t\t\t\t{\"下载按钮\":\"下载正式版\"}    /*填入下载按钮*/\n\t\t\t],\n\t\t\tvalues: [\n\t\t\t\t{\"点击次数\":1}    \n\t\t\t]\n\t\t});\n\t});\n});","last_time":"2013-04-26 16:49:30"},"id2":{"name":"提交订单(购买返回)_金额&购买次数","url":["http://store.oppo.com/order/done*"],"exclude":[],"code":"CClicki._trackMetrics([\n    0    , \n    0    , \n    1    , \n    0    , \n    parseInt($('.red').eq(0).text().match(/\\d+/g)[0])\n]);","last_time":"2013-09-10 15:14:05"},"id3":{"name":"ee","url":["current"],"exclude":["exclue","url.com/a.html"],"code":"url.com/a.html","last_time":"2013-12-19 20:49:41"}}},
+        widgets: null
+    };
+
+    if (!window.CClicki) {
+        var id = '__clicki_js_tracker_loader__';
+        if (!document.getElementById(id)) {
+            var host = CLICKI_CF.cdn_host || CLICKI_CF.host;
+            var c = document.createElement('script');
+            c.id = id;
+            c.type = 'text/javascript';
+            c.charset = 'UTF-8';
+            c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + host + '/boot/clicki.js?v=' + CLICKI_CF.version;
+            var h = document.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(c, h);
+        }
+    }
+    function check () {
+        if (window.CClicki) {
+            window.CClicki.New(CLICKI_CF);
+        }else{
+            setTimeout(check, 50);
+        }
+    };
+    check();
+})();

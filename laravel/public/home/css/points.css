@@ -1,0 +1,599 @@
+.points-container{
+	background-color: #f5f5f5;
+	padding-bottom: 20px;
+}
+
+.points-unit{
+	width: 100%;
+}
+
+.points-wrapper{
+	width: 1180px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+}
+
+.points-rows{
+	height: 1%;
+	overflow: auto;
+	display: block;
+}
+
+.points-rowspan{
+	float: left;
+}
+
+#points-user{
+	width: 290px;
+	padding: 30px;
+	color: #989898;
+}
+
+#points-banner{
+	width: 830px;
+}
+
+.points-user-title{
+	padding-top: 30px;
+}
+
+.points-user-intro{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 12px;
+	margin-top: 15px;
+}
+
+.points-user-text{
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.points-user-login a{
+	width: 110px;
+	height: 40px;
+	font-size: 15px;
+	line-height: 40px;
+	margin-top: 60px;
+	color: #fff!important;
+	background-color: #03b788;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+.points-user-avatar{
+	text-align: center;
+}
+
+.points-user-name{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.points-user-name span{
+	color: #03b788;
+}
+
+.points-user-points{
+	font-size: 12px;
+	line-height: 35px;
+	height: 35px;
+	padding: 2px 0;
+	border-top: solid 1px #e6e6e6;
+	border-bottom: solid 1px #e6e6e6;
+	display: block;
+	width: 100%;
+}
+
+.points-user-point{
+	float: left;
+	width: 49%;
+	text-indent: 20px;
+}
+
+#list-user .points-user-point{
+	text-indent: 50px;
+}
+
+.points-user-point span{
+	color: #03b788;
+	margin-left: 10px;
+}
+
+.points-user-point2{
+	border-left: solid 1px #e6e6e6;
+}
+
+.points-user-more{
+	text-align: center;
+	margin-top: 5px;
+}
+
+.points-user-more a{
+	color: #03b788!important;
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: underline!important;
+}
+
+.points-user-how{
+	margin-top: 10px;
+}
+
+.points-user-how a{
+	color: #03b788!important;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+	text-decoration: none!important;
+}
+
+.points-user-question{
+	text-align: right;
+}
+
+.points-user-question a{
+	color: #03b788!important;
+	font-size: 12px;
+	line-height: 24px;
+	text-decoration: underline!important;
+}
+
+.points-user-text2{
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.points-list-bar{
+	margin: 20px 0;
+}
+
+.points-list-title{
+	padding: 20px 30px;
+}
+
+.points-list-title a{
+	color: #666;
+	font-size: 12px;
+	line-height: 14px;
+	float: right;
+	text-decoration: none;
+	border: solid 1px #cccccc;
+	background-color: #f5f5f5;
+	height: 14px;
+	width: 68px;
+	padding: 7px 0;
+	text-align: center;
+}
+
+.points-list .points-wrapper{
+	background-color: #f5f5f5;
+}
+
+.points-list-product{
+	float: left;
+	width: 220px;
+	height: 324px;
+	background-color: #fff;
+	border-bottom: solid 6px #eaeaea;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.points-list-product:hover{
+	border-color: #03b788;
+}
+
+.points-product-image{
+	padding-top: 40px;
+}
+
+.points-product-name{
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+	line-height: 20px;
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+.points-product-point{
+	font-size: 12px;
+	line-height: 30px;
+	color: #03b788;
+}
+
+.points-list-product a{
+	display: block;
+	text-decoration: none;
+}
+
+.points-list-product a:hover .points-product-btn span{
+	border-color: #03b788;
+	background-color: #03b788;
+	color: #fff;
+}
+
+.points-product-btn{
+}
+
+.points-product-btn span{
+	height: 22px;
+	width: 80px;
+	display: block;
+	border: solid 1px #ccc;
+	background-color: #f5f5f5;
+	color: #666666;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+.points-list-product-last{
+	margin-right: 0;
+}
+
+#points-rule{
+	_margin-top: 20px;
+	*margin-top: 20px;
+}
+
+#points-rule .points-rows{
+	padding: 25px 30px;
+	color: #989898;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.points-rule-title{
+	color: #03b788;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.points-rule-subtitle{
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.points-rule-text a{
+	color: #03b788!important;
+}
+
+.points-rule-text a:hover{
+	text-decoration: underline!important;
+}
+
+.points-list-top-bar{
+	margin-top: 20px;
+}
+
+.points-list-top-title{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #03b788;
+}
+
+.points-list-top-title span{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.points-list-top-title a{
+	color: #fff!important;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.points-list-more{
+	float: right;
+	margin-right: 10px;
+	font-size: 12px!important;
+	font-weight: normal!important;
+}
+
+.points-list-top-title a:hover{
+	text-decoration: underline;
+}
+
+.points-mask{
+	background-color: #000;
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter:alpha(opacity=80); 
+	width: 100%;
+	z-index: 999;
+	display:none;
+}
+
+.points-dialog{
+	z-index: 1000; 
+	background-color:#fff; 
+	border:solid 5px #858585;
+	color: #575757;
+	width: 510px;
+	display: none;
+	/*display: block;
+	margin: 10px auto;*/
+}
+
+.points-dialog-bar{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 30px;
+	position: relative;
+	background-color: #f6f6f6;
+}
+
+.points-dialog-bar a{
+	position: absolute;
+	right: 20px;
+	top: 14px;
+}
+
+.points-dialog-content{
+	padding: 25px 0 50px 0;
+}
+
+.points-dialog-unit{
+	width: 100%;
+	text-align: center;
+}
+
+.points-dialog-green{
+	color: #03b788;
+	font-size: 20px;
+	line-height: 26px;
+	margin-top: 20px;
+}
+
+.points-dialog-getpoints{
+	margin-top: 15px;
+}
+
+.points-dialog-getpoints a{
+	color: #0088cc!important;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.points-dialog-getpoints a:hover{
+	text-decoration: underline;
+}
+
+.points-dialog-text{
+	color: #989898;
+	font-size: 12px;
+	line-height: 26px;
+}
+
+.points-dialog-text a{
+	color: #03b788!important;
+}
+
+.points-dialog-text a:hover{
+	text-decoration: underline;
+}
+
+#jfcg .points-dialog-content{
+	padding: 40px 0 60px 0;
+}
+
+#jfcg .points-dialog-green{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.points-dialog-btn{
+	padding: 0 30px;
+	height: 33px;
+	line-height: 33px;
+	color: #fff!important;
+	background-color: #03b788;
+	border-radius: 4px;
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.points-dialog-unit a.disabled{
+	cursor: default;
+	border: solid 1px #cccccc;
+	background-color: #f6f6f6;
+	color: #666666!important;
+}
+
+#shdz{
+	width: 640px;
+}
+
+#shdz .points-dialog-content{
+	padding: 20px 30px 50px 30px;
+	position: relative;
+}
+
+#shdz .points-dialog-unit{
+	text-align: left;
+	line-height: 30px;
+	padding: 10px 0;
+}
+
+#shdz .points-dialog-unit span{
+	color: #333333;
+	font-size: 14px;
+}
+
+#shdz .points-dialog-unit input{
+	width: 150px;
+	height: 28px;
+	line-height: 26px;
+	border: solid 1px #cccccc;
+}
+
+#shdz .points-dialog-unit select{
+	width: 90px;
+	height: 28px;
+	line-height: 28px;
+	border: solid 1px #cccccc;
+	margin-right: 20px;
+}
+
+.points-dialog-unit-required{
+	color: #ed0000!important;
+}
+
+.points-dialog-unit label{
+	width: 70px;
+	display: inline-block;
+}
+
+#shdz .points-dialog-text{
+	padding-left: 4px;
+}
+
+.points-dialog-text2{
+	padding-left: 68px!important;
+}
+
+.points-dialog-error{
+	color: #ed0000;
+	position: absolute;
+	display: none;
+}
+
+.error-1{
+	top: 63px;
+	left: 100px;
+}
+
+.error-2{
+	top: 116px;
+	left: 100px;
+}
+
+.error-3{
+	top: 166px;
+	left: 100px;
+}
+
+#content{
+	background-color: #f5f5f5;
+}
+
+#detail{
+	padding-top: 0!important;
+	background-color: #f5f5f5!important;
+	margin-bottom: 20px!important;
+}
+
+#detail .product-intro{
+	background-color: #fff;
+	padding-top: 0!important;
+	padding-bottom: 0!important;
+	height: 460px;
+	overflow: hidden;
+}
+
+.product-detail{
+	background-color: #f5f5f5!important;
+	border-bottom: solid 1px #eaeaea;
+}
+
+#points-bread-crumb{
+	padding-top: 30px;
+	padding-bottom: 24px;
+	color: #838383;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#points-bread-crumb .points-rows{
+	height: 14px;
+	overflow: hidden;
+}
+
+#points-bread-crumb a{
+	color: #838383;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+#points-bread-crumb a:hover{
+	text-decoration: underline!important;
+}
+
+#points-bread-crumb .points-wrapper{
+	background-color: #f5f5f5;
+}
+
+#list-user{
+	padding: 15px 0;
+}
+
+#list-user .points-user-name,
+#list-user .points-user-more{
+	text-align: left;
+	padding-left: 50px;
+}
+
+#list-user .points-user-name{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#list-user .points-user-how{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#list-user .points-user-text2{
+	color: #989898;
+}
+
+#list-user{
+	color: #989898;
+}
+
+#jfqr{
+	width: 360px;
+}
+
+#jfqr .points-dialog-content{
+	padding-bottom: 30px;
+}
+
+#jfqr .points-dialog-unit{
+	width: auto;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#jfqr .points-dialog-text span{
+	color: #03b788;
+}
+
+#jfqr .dialogCancel{
+	background-color: #ccc;
+}
+
+#jfqr .dialogConfirm{
+	margin-right: 30px;
+}

@@ -1,0 +1,736 @@
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class='no-js'>
+  <!-- Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+    <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
+    <title>{$desc['title']}</title>
+    <meta name="keywords" content="{$desc['keywords']}" />
+    <meta name="description" content="{'description'}" />
+    <link media="all" type="text/css" rel="stylesheet" href="__PUBLIC__/Home/css/styles.css-v=20160214150100">
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/pay.js"></script>
+
+
+  </head>
+
+  <body>
+  <header class='main-header'>
+  <div class='upper-area'>
+    <div class='wrapper g'>
+      <ul class='gi menu-sec'>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav>ul'>
+    <a href='http://www.oppo.cn/' target='_blank'>社区</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav>ul'>
+    <a href='http://www.coloros.com/' target='_blank'>ColorOS</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href="{:U('ScoreShop/index')}" target='_blank'>软件商店</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href='http://zhushou.oppo.com/' target='_blank'>手机助手</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href='http://yun.oppo.com/' target='_blank'>云服务</a>
+  </li>
+  <!-- <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav>ul'>
+    <a href='http://points.oppo.com/' target='_blank'>积分商城</a>
+  </li> -->
+  <!-- <li class='gi gi-search' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href='#' class='m-item'><img src="/media/images/icon-menu-search.png" /></a>
+  </li> -->
+</ul>      <div class='search gi'>
+  <a class='js-toggle-close' href='#'>
+    <span class='icon icon-search'></span>
+  </a>
+  <div class='search-form js-content'>
+    <div class='wrapper'>
+      <form action="{:U('Goods/index')}" class='main-form' data-desktop='.search-form .wrapper' data-mobile='.main-menu .search'>
+
+        <div class='input-button-item'><input placeholder='搜索OPPO商品' type='text' name="q"><button class='button button-primary' type='submit'>搜索</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>      <ul class='gi log-area'>
+    <if condition = "session('?login')">
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+    <a href="{:U('Home/User/index')}">
+      <span class='text'>我的OPPO</span>
+      <span class='icon icon-messages'></span>
+      <span class='n-messages'>()</span>
+    </a>
+    </li>
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+    <a class='logout' href="{:U('Home/User/logout')}">退出</a>
+    </li>
+  <else />
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+      <a href="{:U('Login/index')}">
+        登录
+      </a>
+    </li>
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+    <a href="{:U('Add/index')}">
+    注册
+    </a>
+    </li>
+    </if>
+    </ul>      <ul class='gi menu-lang'>
+  <li class='gi gi-language' data-desktop='.menu-lang' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a class='lang-link js-toggle-close' href='#'>Global</a>
+    <div class='languages js-content' data-desktop='.gi-language' data-mobile='.languages-panel'>
+      <div class='wrapper'>
+        <h3 class='h-epsilon'>Select your country or region</h3>
+        <ul>
+          <li>
+          <a  href='http://www.oppo.com/dz/'>Algérie</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/au/'>Australia</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/bd/'>Bangladesh</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/eg/'>Egypt</a>
+          </li>
+          <li>
+          <a href='http://www.oppo.com/en/'>Global</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/in/'>India</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/id/'>Indonesia</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ke/'>Kenya</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/my/'>Malaysia</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ma/'>Maroc</a>
+          </li>
+          <!-- <li>
+          <a  href='http://www.oppo.com/mx/'>México</a>
+          </li> -->
+          <!-- <li>
+          <a  href='http://www.oppo.com/ng/'>Nigeria</a>
+          </li> -->
+          <li>
+          <a  href='http://www.oppo.com/pk/'>Pakistan</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ph/'>Philippines</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/sg/'>Singapore</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/lk/'>Sri Lanka</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/tw/'>台灣</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ae/'>UAE</a>
+          </li>
+          <li>
+          <a  href='http://www.oppomobile.vn/'>Việt Nam</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/th/'>ประเทศไทย</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/mm/'>Myanmar</a>
+          </li>
+          <li>
+          <a  class='current'  href='http://www.oppo.com/cn/'>中国</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>    </div>
+  </div>
+  <div class='bottom-area'>
+    <div class='wrapper'>
+      <a class='js-open-menu' href='#'>
+        <i class='js-open-menu-bar'></i>
+      </a>
+      <div class='shop-cart'>
+  <a href='{:U('Cart/index')}'>
+    <span class='text'>购物车</span>
+    <span class='icon icon-cart'></span>
+    
+  </a>
+</div>      <div class='logo logo-extend'>
+        <a href='http://www.oppo.com/cn/'>
+          <img alt="" src="__PUBLIC__/{$desc['logo']}" style="width:190px;height:31px"/>
+        </a>
+        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
+          <img src="/media/images/revision/qixi/qixi-logo.gif" />
+        </a> -->
+        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
+          <img src="/media/images/revision/newyear/monkey-logo.gif" />
+        </a> -->
+      </div>
+      <a class='js-open-user' href='#'>
+        <img src="__PUBLIC__/Home/images/icon-menu-user.png" alt="">
+      </a>
+      <div class='main-menu'>
+        <!-- <div class='mobile-tools'>
+          <a class='js-close-menu' href='#'>
+            <img alt='' src='/cn/media/images/icon-menu-close.png' />
+          </a>
+          <ul class='g log-area'></ul>
+        </div> -->
+        <div class='search'></div>
+        <nav>
+  <div class='nav-ul-view'>
+  <ul class='menu g'>
+    <li class='gi
+    '>
+      <a class='m-item' href={:U('Index/index')}>
+        <span>首页</span>
+      </a>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href="{:U('Goods/index')}">
+        <span>产品</span>
+      </a>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href="{:U('News/index')}">
+        品牌
+              </a>
+          </li>
+    <li class='gi
+        is-active
+        '>
+      <a class='m-item' href="{:U('Goods/index')}">
+        <span>在线商城</span>
+        <span class='js-toggle-submenu toggle'></span>
+      </a>
+      <ul class='sub-menu'>
+        <li>
+          <a href="{:U('Goods/index')}">手机</a>
+        </li>
+        <li>
+          <a href="{:U('Part/index')}">配件</a>
+        </li>
+        <li>
+          <a href='http://www.oppo.com/cn/service/help?name=%E8%B4%AD%E4%B9%B0%E5%B8%AE%E5%8A%A9'>购物指南</a>
+        </li>
+        <li>
+          <a href="{:U('ScoreShop/index')}" target='_blank'>积分商城</a>
+        </li>
+      </ul>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href="{:U('Store/index')}">
+        体验店
+      </a>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href='http://www.oppo.com/cn/service.html'>
+        服务
+              </a>
+    </li>
+        </ul>
+  </div>
+
+</nav>
+      </div>
+      <div class='user-menu'>
+<div class='relative'>
+  <ul>
+    <li class='user-menu-login'>
+      <a href="{:U('Order/centerindex')}">我的订单</a>
+    </li>
+    <li class='user-menu-login'>
+      <a href="http://my.oppo.com/user/profile">账户信息</a>
+    </li>
+    <li class='user-menu-login'>
+      <a href="http://www.opposhop.cn/user/addresses">配送地址</a>
+    </li>
+    <li class='user-menu-login user-menu-message'>
+      <a href="http://my.oppo.com/user/messages">系统消息</a>
+    </li>
+    <li class='user-menu-login user-menu-cart'>
+      <a href="http://www.opposhop.cn/cart">购物车</a>
+    </li>
+    <li class='user-menu-login user-menu-toLogin'>
+      <a href='http://my.oppo.com/auth/login?callback=http%3A%2F%2Fwww.opposhop.cn%2Fcart'>
+        登录
+      </a>
+    </li>
+    <li class='user-menu-logout'>
+      <a href='http://my.oppo.com/auth/logout?callback=http%3A%2F%2Fwww.opposhop.cn%2Fcart'>退出</a>
+    </li>
+  </ul>
+</div>
+</div>    </div>
+  </div>
+  <div class='nav-sub-menu'>
+  <div class='relative'></div>
+</div>
+<div class='nav-search-mask'></div>
+<div class='nav-search'>
+  <div class='nav-search-container'>
+    <div class='nav-search-content'>
+      <div class='nav-search-input'>
+        <form action='http://www.opposhop.cn/products' class='main-form'>
+          <input placeholder='搜索OPPO商品' type='text' name="q">
+          <button class='button' type='submit'>搜索</button>
+          <a href='#' class='nav-search-close'>取消</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>  <div class="languages-panel"></div>
+</header>
+
+
+      <main class="main-content slab-light order-payments-revision opr">
+    <div class="wrapper">
+      <ul class="breadcrumb">
+  <li>
+    <a href="{:U('Index/index')}">
+      首页
+      <span>/</span>
+    </a>
+  </li>
+            <li>
+                  <a href="{:U('Goods/index')}">
+            在线购物
+            <span>/</span>
+          </a>
+              </li>
+          <li>
+                  <a href="{:U('Cart/index')}">
+            购物车结算
+            <span>/</span>
+          </a>
+              </li>
+          <li>
+                  支付
+              </li>
+      </ul>
+      <div class="brick-bottom">
+        <ul class="steps"><li class="one active ">
+    <div class="step-content">
+            <h5 class="step-heading">购物车</h5>
+      <div class="step-gradient"></div>
+    </div>
+  </li><li class="two  active">
+    <div class="step-content palm-right-text">
+            <h5 class="step-heading">填写订单</h5>
+      <div class="step-gradient"></div>
+    </div>
+  </li><li class="three active step-completed">
+    <div class="step-content">
+            <h5 class="step-heading">支付</h5>
+      <div class="step-gradient"></div>
+    </div>
+  </li></ul>
+      </div>
+
+      <div class="slab-white opr-detail">
+        <div class="g">
+          <div class="gi desk-two-thirds one-whole">
+            <div class="opr-title">订单提交成功！</div>
+
+            <div class="opr-text">订单号为 <i class="ordercode">{$data['0']['code']}</i>，请您在提交订单后<span class="alert-danger">48</span>小时内付款（逾期订单将自动取消）。</div>
+          </div>
+          <div class="gi desk-one-third one-whole opr-prices">
+            <div class="opr-price">应付金额：<span>￥{$data['0']['money']}</span></div>
+            <input type="hidden" id="money" value="{$data['0']['money']}">
+            <!-- <div class="opr-order-detail"><a href="javascript:;" class="oppo-tj" data-tj="store|link|order|detail">订单详情&nbsp;<span class="icon icon-arrow-down-green"></span></a></div> -->
+          </div>
+        </div>
+       
+      </div>
+
+      
+      <div class="slab-white opr-platform">
+        <div class="opr-platform-title">选择支付平台：<!-- <span>（默认推荐您常用的支付平台）</span> --></div>
+        <div class="brick-shadow">
+          <div class="select-platforms"><a href="javascript:;" class="open-platforms oppo-tj" data-tj="store|link|order|platforms">选择其他支付平台&nbsp;<span class="icon icon-arrow-down-green"></span></a></div>
+          <div class="list-platforms">
+            <form>
+              <div class="g g-wrapper-s payment-group">
+
+                
+                                                      <!--支付宝支付-->
+                    <div class="gi one-whole">
+  <div style="display: block;" class="field radio-item pay dark xl">
+    <span class="radio mozilla mozilla45 not_msie custom-form_radio_alipay checked_radio"><input class="parent_radio oppo-tj" id="radio_alipay" checked="checked" name="payonline_category" code="alipay" bankcode="directpay" paymethod="0" seed="payment_alipay" qr_pay="0" data-tj="store|radio|order|alipay" type="radio"></span>
+    <label for="radio_alipay">
+      <img alt="" src="__PUBLIC__/Home/images/alipay_logo.png">
+      <font>（支持“花呗”<span class="portable-hide">及“扫码”付款</span>）</font>
+      <div style="display: block;" class="radio-extend portable-hide radio-selected">
+        <div class="g alipay-extend">
+          <div class="gi two-fifths">
+            <div class="alipay-huabei">
+              <p class="alipay-huabei-title">输入账户在线支付</p>
+              <p><a href="#" class="huabei-pay" title="点击跳转到花呗支付"><img src="__PUBLIC__/Home/images/payment_huabei.jpg"></a></p>
+              <p>输入支付宝账户信息完成付款</p>
+            </div>
+          </div>
+          <div class="gi one-fifth">
+            <p class="alipay-or">或</p>
+          </div>
+          <div class="gi two-fifths">
+            <div class="alipay-iframe">
+                              <img src="__PUBLIC__/Home/images/zhifubao.jpg" height="280" width="280" />
+                          </div>
+            <p>使用支付宝钱包扫码完成付款</p>
+            <p class='text-green'><a href="https://mobile.alipay.com/index.htm" target="_blank">支付宝钱包下载</a>｜<a href="http://help.alipay.com/lab/help_detail.htm?help_id=380925" target="_blank">如何使用？</a></p>
+          </div>
+        </div>
+      </div>
+    </label>
+    
+  </div>
+</div>                                    <!--微信扫码支付-->
+                  <div class="gi one-whole">
+  <div class="field radio-item pay dark xl">
+    <span class="radio mozilla mozilla45 not_msie custom-form_radio_weixin_qrcode"><input class="parent_radio" id="radio_weixin_qrcode" value="weixin_qrcode" name="payonline_category" code="weixin_qrcode" bankcode="directpay" paymethod="0" seed="payment_tenpay" qr_pay="0" data-tj="store|radio|order|weixin_qrcode" type="radio"></span>
+    <label for="radio_weixin_qrcode">
+      <img alt="" src="__PUBLIC__/Home/images/weixin.jpg">
+      <div class="radio-extend portable-hide">
+        <div class="g">
+          <div class="gi one-half">
+            <p class="align-center mg-50"><img id="weixin_qrcode" src="__PUBLIC__/Home/images/loader.gif" data-src="http://www.opposhop.cn/orders/pay?order_sn=160306214101324&amp;payment_code=weixin_js&amp;payment_bankcode=scan"></p>
+            <p class="align-center" id="weixin_qrtext">使用微信扫码完成付款</p>
+          </div>
+          <div class="gi one-half">
+            <p class="align-center"><img src="__PUBLIC__/Home/images/phone-bg.png"></p>
+          </div>
+        </div>
+      </div>
+    </label>
+    
+  </div>
+</div>                  
+                                                  
+                                  <!--网银支付-->
+                  <div class="gi one-whole">
+  <div class="field radio-item pay dark xl">
+    <span class="radio mozilla mozilla45 not_msie custom-form_radio_wangyin"><input class="parent_radio oppo-tj" id="radio_wangyin" name="payonline_category" value="wangyin" data-tj="store|radio|order|wangyin" type="radio"></span>
+    <label for="radio_wangyin">
+      <img alt="" src="__PUBLIC__/Home/images/payment_wangyin.jpg">
+      <div class="radio-extend">
+        <div class="g g-wrapper-s payment-group">
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_ICBCB2C"><input class="bank_radio oppo-tj" id="radio_ICBCB2C" name="payonline_bank" code="alipay" bankcode="ICBCB2C" paymethod="1" seed="payment_bank_ICBCB2C" data-tj="store|radio|order|wangyin_ICBCB2C" type="radio"></span>
+                <label for="radio_ICBCB2C">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico4.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_CMB"><input class="bank_radio oppo-tj" id="radio_CMB" name="payonline_bank" code="alipay" bankcode="CMB" paymethod="1" seed="payment_bank_CMB" data-tj="store|radio|order|wangyin_CMB" type="radio"></span>
+                <label for="radio_CMB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico3.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_CCB"><input class="bank_radio oppo-tj" id="radio_CCB" name="payonline_bank" code="alipay" bankcode="CCB" paymethod="1" seed="payment_bank_CCB" data-tj="store|radio|order|wangyin_CCB" type="radio"></span>
+                <label for="radio_CCB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico5.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_BOCB2C"><input class="bank_radio oppo-tj" id="radio_BOCB2C" name="payonline_bank" code="alipay" bankcode="BOCB2C" paymethod="1" seed="payment_bank_BOCB2C" data-tj="store|radio|order|wangyin_BOCB2C" type="radio"></span>
+                <label for="radio_BOCB2C">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico7.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_ABC"><input class="bank_radio oppo-tj" id="radio_ABC" name="payonline_bank" code="alipay" bankcode="ABC" paymethod="1" seed="payment_bank_ABC" data-tj="store|radio|order|wangyin_ABC" type="radio"></span>
+                <label for="radio_ABC">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico6.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_COMM"><input class="bank_radio oppo-tj" id="radio_COMM" name="payonline_bank" code="alipay" bankcode="COMM" paymethod="1" seed="payment_bank_COMM" data-tj="store|radio|order|wangyin_COMM" type="radio"></span>
+                <label for="radio_COMM">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico8.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_PSBC-DEBIT"><input class="bank_radio oppo-tj" id="radio_PSBC-DEBIT" name="payonline_bank" code="alipay" bankcode="PSBC-DEBIT" paymethod="1" seed="payment_bank_PSBC-DEBIT" data-tj="store|radio|order|wangyin_PSBC-DEBIT" type="radio"></span>
+                <label for="radio_PSBC-DEBIT">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico9.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_CEBBANK"><input class="bank_radio oppo-tj" id="radio_CEBBANK" name="payonline_bank" code="alipay" bankcode="CEBBANK" paymethod="1" seed="payment_bank_CEBBANK" data-tj="store|radio|order|wangyin_CEBBANK" type="radio"></span>
+                <label for="radio_CEBBANK">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico12.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_SPDB"><input class="bank_radio oppo-tj" id="radio_SPDB" name="payonline_bank" code="alipay" bankcode="SPDB" paymethod="1" seed="payment_bank_SPDB" data-tj="store|radio|order|wangyin_SPDB" type="radio"></span>
+                <label for="radio_SPDB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico11.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_CITIC"><input class="bank_radio oppo-tj" id="radio_CITIC" name="payonline_bank" code="alipay" bankcode="CITIC" paymethod="1" seed="payment_bank_CITIC" data-tj="store|radio|order|wangyin_CITIC" type="radio"></span>
+                <label for="radio_CITIC">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico16.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_CIB"><input class="bank_radio oppo-tj" id="radio_CIB" name="payonline_bank" code="alipay" bankcode="CIB" paymethod="1" seed="payment_bank_CIB" data-tj="store|radio|order|wangyin_CIB" type="radio"></span>
+                <label for="radio_CIB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico14.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_SDB"><input class="bank_radio oppo-tj" id="radio_SDB" name="payonline_bank" code="alipay" bankcode="SDB" paymethod="1" seed="payment_bank_SDB" data-tj="store|radio|order|wangyin_SDB" type="radio"></span>
+                <label for="radio_SDB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico17.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_CMBC"><input class="bank_radio oppo-tj" id="radio_CMBC" name="payonline_bank" code="alipay" bankcode="CMBC" paymethod="1" seed="payment_bank_CMBC" data-tj="store|radio|order|wangyin_CMBC" type="radio"></span>
+                <label for="radio_CMBC">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico15.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_HZCBB2C"><input class="bank_radio oppo-tj" id="radio_HZCBB2C" name="payonline_bank" code="alipay" bankcode="HZCBB2C" paymethod="1" seed="payment_bank_HZCBB2C" data-tj="store|radio|order|wangyin_HZCBB2C" type="radio"></span>
+                <label for="radio_HZCBB2C">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico21.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_SHBANK"><input class="bank_radio oppo-tj" id="radio_SHBANK" name="payonline_bank" code="alipay" bankcode="SHBANK" paymethod="1" seed="payment_bank_SHBANK" data-tj="store|radio|order|wangyin_SHBANK" type="radio"></span>
+                <label for="radio_SHBANK">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico18.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_BJRCB"><input class="bank_radio oppo-tj" id="radio_BJRCB" name="payonline_bank" code="alipay" bankcode="BJRCB" paymethod="1" seed="payment_bank_BJRCB" data-tj="store|radio|order|wangyin_BJRCB" type="radio"></span>
+                <label for="radio_BJRCB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico19.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_SPABANK"><input class="bank_radio oppo-tj" id="radio_SPABANK" name="payonline_bank" code="alipay" bankcode="SPABANK" paymethod="1" seed="payment_bank_SPABANK" data-tj="store|radio|order|wangyin_SPABANK" type="radio"></span>
+                <label for="radio_SPABANK">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico13.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_FDB"><input class="bank_radio oppo-tj" id="radio_FDB" name="payonline_bank" code="alipay" bankcode="FDB" paymethod="1" seed="payment_bank_FDB" data-tj="store|radio|order|wangyin_FDB" type="radio"></span>
+                <label for="radio_FDB">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico23.png">
+                </label>
+              
+            </div>
+          </div>
+                    <div class="gi desk-one-quarter">
+            <div class="field radio-item pay dark">
+              <span class="radio mozilla mozilla45 not_msie custom-form_radio_NBBANK"><input class="bank_radio oppo-tj" id="radio_NBBANK" name="payonline_bank" code="alipay" bankcode="NBBANK" paymethod="1" seed="payment_bank_NBBANK" data-tj="store|radio|order|wangyin_NBBANK" type="radio"></span>
+                <label for="radio_NBBANK">
+                  <img alt="" src="__PUBLIC__/Home/images/payment_ico20.png">
+                </label>
+              
+            </div>
+          </div>
+                  </div>
+      </div>
+    </label>
+    
+  </div>
+</div>                
+                                  <!--分期付款-->
+                  <div class="gi one-whole">
+  <div class="field radio-item pay dark xl">
+    <span class="radio mozilla mozilla45 not_msie custom-form_radio_fenqi"><input class="parent_radio oppo-tj" id="radio_fenqi" name="payonline_category" code="installment" value="installment" data-tj="store|radio|order|installment" type="radio"></span>
+    <label for="radio_fenqi">
+      <img alt="" src="__PUBLIC__/Home/images/payment_fenqi.jpg">
+      <font>（目前仅支持“招商银行分期付款”）</font>
+      <div class="radio-extend fenqi-extend">
+        <div class="g g-wrapper-s">
+                    <div class="gi desk-one-third">
+            <div class="field input-big-radio">
+              <span class="radio mozilla mozilla45 not_msie custom-form_due_3"><input code="installment oppo-tj" name="payonline_installment" class="due" id="due_3" value="0.03" data-cnt="3" data-param3="3%" data-param2="89.97" data-tj="store|radio|order|installment_3" type="radio"></span>
+              <label for="due_3">
+                <span class="main">
+                  3期
+                </span>
+                <span class="aside">
+                  ￥1,029.66 / 月
+                </span>
+              </label>
+              <input name="some_name" value="&lt;$CDPRequest_Pay$&gt;&lt;$Head$&gt;&lt;$Version$&gt;1.0.0.0&lt;/$Version$&gt;&lt;$TestFlag$&gt;N&lt;/$TestFlag$&gt;&lt;/$Head$&gt;&lt;$Body$&gt;&lt;$MchMchNbr$&gt;042997&lt;/$MchMchNbr$&gt;&lt;$TrxTrxCcy$&gt;156&lt;/$TrxTrxCcy$&gt;&lt;$MchBllNbr$&gt;0000298650&lt;/$MchBllNbr$&gt;&lt;$MchBllDat$&gt;20160306&lt;/$MchBllDat$&gt;&lt;$MchBllTim$&gt;214111&lt;/$MchBllTim$&gt;&lt;$TrxBllAmt$&gt;2999.00&lt;/$TrxBllAmt$&gt;&lt;$TrxPedCnt$&gt;3&lt;/$TrxPedCnt$&gt;&lt;$MchUsrIdn$&gt;132877017&lt;/$MchUsrIdn$&gt;&lt;$MchNtfUrl$&gt;http://www.opposhop.cn/payments/installment/callback&lt;/$MchNtfUrl$&gt;&lt;$MchNtfPam$&gt;10566a462688c656dcde07&lt;/$MchNtfPam$&gt;&lt;$TrxGdsGrp$&gt;2272593&lt;/$TrxGdsGrp$&gt;&lt;$TrxPstTel$&gt;15373698976&lt;/$TrxPstTel$&gt;&lt;$UIHidePed$&gt;N&lt;/$UIHidePed$&gt;&lt;/$Body$&gt;&lt;$Signature$&gt;8b0931f28c5f0953e8695d04667cfef2655766b3&lt;/$Signature$&gt;&lt;/$CDPRequest_Pay$&gt;" class="installment_str_3" type="hidden">
+            </div>
+          </div>
+                    <div class="gi desk-one-third">
+            <div class="field input-big-radio">
+              <span class="radio mozilla mozilla45 not_msie custom-form_due_6"><input code="installment oppo-tj" name="payonline_installment" class="due" id="due_6" value="0.042" data-cnt="6" data-param3="4.2%" data-param2="125.96" data-tj="store|radio|order|installment_6" type="radio"></span>
+              <label for="due_6">
+                <span class="main">
+                  6期
+                </span>
+                <span class="aside">
+                  ￥520.83 / 月
+                </span>
+              </label>
+              <input name="some_name" value="&lt;$CDPRequest_Pay$&gt;&lt;$Head$&gt;&lt;$Version$&gt;1.0.0.0&lt;/$Version$&gt;&lt;$TestFlag$&gt;N&lt;/$TestFlag$&gt;&lt;/$Head$&gt;&lt;$Body$&gt;&lt;$MchMchNbr$&gt;042997&lt;/$MchMchNbr$&gt;&lt;$TrxTrxCcy$&gt;156&lt;/$TrxTrxCcy$&gt;&lt;$MchBllNbr$&gt;0000298650&lt;/$MchBllNbr$&gt;&lt;$MchBllDat$&gt;20160306&lt;/$MchBllDat$&gt;&lt;$MchBllTim$&gt;214111&lt;/$MchBllTim$&gt;&lt;$TrxBllAmt$&gt;2999.00&lt;/$TrxBllAmt$&gt;&lt;$TrxPedCnt$&gt;6&lt;/$TrxPedCnt$&gt;&lt;$MchUsrIdn$&gt;132877017&lt;/$MchUsrIdn$&gt;&lt;$MchNtfUrl$&gt;http://www.opposhop.cn/payments/installment/callback&lt;/$MchNtfUrl$&gt;&lt;$MchNtfPam$&gt;94556d55e42a7f56dcbd38&lt;/$MchNtfPam$&gt;&lt;$TrxGdsGrp$&gt;2272593&lt;/$TrxGdsGrp$&gt;&lt;$TrxPstTel$&gt;15373698976&lt;/$TrxPstTel$&gt;&lt;$UIHidePed$&gt;N&lt;/$UIHidePed$&gt;&lt;/$Body$&gt;&lt;$Signature$&gt;f7378d4d1fcafb7d9a25655b2748095a249fff6e&lt;/$Signature$&gt;&lt;/$CDPRequest_Pay$&gt;" class="installment_str_6" type="hidden">
+            </div>
+          </div>
+                    <div class="gi desk-one-third">
+            <div class="field input-big-radio">
+              <span class="radio mozilla mozilla45 not_msie custom-form_due_12"><input code="installment oppo-tj" name="payonline_installment" class="due" id="due_12" value="0.072" data-cnt="12" data-param3="7.2%" data-param2="215.93" data-tj="store|radio|order|installment_12" type="radio"></span>
+              <label for="due_12">
+                <span class="main">
+                  12期
+                </span>
+                <span class="aside">
+                  ￥267.91 / 月
+                </span>
+              </label>
+              <input name="some_name" value="&lt;$CDPRequest_Pay$&gt;&lt;$Head$&gt;&lt;$Version$&gt;1.0.0.0&lt;/$Version$&gt;&lt;$TestFlag$&gt;N&lt;/$TestFlag$&gt;&lt;/$Head$&gt;&lt;$Body$&gt;&lt;$MchMchNbr$&gt;042997&lt;/$MchMchNbr$&gt;&lt;$TrxTrxCcy$&gt;156&lt;/$TrxTrxCcy$&gt;&lt;$MchBllNbr$&gt;0000298650&lt;/$MchBllNbr$&gt;&lt;$MchBllDat$&gt;20160306&lt;/$MchBllDat$&gt;&lt;$MchBllTim$&gt;214111&lt;/$MchBllTim$&gt;&lt;$TrxBllAmt$&gt;2999.00&lt;/$TrxBllAmt$&gt;&lt;$TrxPedCnt$&gt;12&lt;/$TrxPedCnt$&gt;&lt;$MchUsrIdn$&gt;132877017&lt;/$MchUsrIdn$&gt;&lt;$MchNtfUrl$&gt;http://www.opposhop.cn/payments/installment/callback&lt;/$MchNtfUrl$&gt;&lt;$MchNtfPam$&gt;9159c4787c415c56dcbe60&lt;/$MchNtfPam$&gt;&lt;$TrxGdsGrp$&gt;2272593&lt;/$TrxGdsGrp$&gt;&lt;$TrxPstTel$&gt;15373698976&lt;/$TrxPstTel$&gt;&lt;$UIHidePed$&gt;N&lt;/$UIHidePed$&gt;&lt;/$Body$&gt;&lt;$Signature$&gt;ac432551f49b99fd9aa675007cd7c726a76b70b8&lt;/$Signature$&gt;&lt;/$CDPRequest_Pay$&gt;" class="installment_str_12" type="hidden">
+            </div>
+          </div>
+                    <div class="gi one-whole">
+            <div class="field fenqi_text">已选择分 <span>0</span> 期，每期含分期手续费 <span>0</span>（手续费率 <span class="green">0</span>）</div>
+          </div>
+        </div>
+      </div>
+    </label>
+    
+  </div>
+</div>                
+                <!--财付通支付-->
+                <div class="gi one-whole">
+  <div class="field radio-item pay dark xl">
+    <span class="radio mozilla mozilla45 not_msie custom-form_radio_tenpay"><input class="parent_radio oppo-tj" id="radio_tenpay" name="payonline_category" code="tenpay" bankcode="directpay" paymethod="0" seed="payment_tenpay" qr_pay="0" data-tj="store|radio|order|tenpay" type="radio"></span>
+    <label for="radio_tenpay">
+      <img alt="" src="__PUBLIC__/Home/images/tenpay.png">
+    </label>
+    
+  </div>
+</div>                
+              </div>
+            </form>
+          </div>
+          <div class="opr-btn-pay">
+            <div class="g">
+              <div class="gi desk-three-quarters">
+                <p class="error_msg_note">
+                                  </p>
+              </div>
+              <div class="gi desk-one-quarter">
+                <a class="button cart-button oppo-tj" id="pay_action" href="javascript:;" data-tj="store|btn|order|lijizhifu">立即支付</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+      <form action="http://www.opposhop.cn/orders/pay" method="post" id="payment_form" target="_blank">
+          <input name="order_sn" value="160306214101324" type="hidden">
+      <input name="payment_code" type="hidden">
+      <input name="payment_bankcode" type="hidden">
+      <input name="payment_method" type="hidden">
+      <input name="short_pay" type="hidden">
+      <input name="payment_qr_pay" type="hidden">
+    </form>
+        <form action="https://netpay.cmbchina.com/cdpay/cdpay.dll?cdpay" method="post" id="installment_payment_form" target="_blank">
+      <input id="Request" name="Request" value="" type="hidden">
+      <input name="orderno" id="orderno" value="160306214101324" type="hidden">
+    </form>
+      <div id="dialog" class="hidden">
+    <div class="mask"></div>
+      <div class="dialog dialog-payment">
+        <div class="dialog-container">
+          <div class="dialog-close"><a href="#">x</a></div>
+          <div class="dialog-content">
+            <div class="field">
+              <h4 class="dialog-title">请确认您的支付情况</h4>
+            </div>
+            <div class="field dialog-btn">
+              <div class="g g-wrapper-s">
+                <div class="gi lap-one-half">
+                  <a id="paymentJumpUrl" href="http://www.opposhop.cn/orders/160306214101324/show" class="button">支付成功</a>
+                </div>
+                <div class="gi lap-one-half">
+                  <a href="javascript:;" id="failed_to_pay" class="button-light">支付失败</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</body></html>

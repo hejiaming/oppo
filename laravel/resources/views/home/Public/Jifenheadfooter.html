@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "">
+<html xmlns="">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	<title>{$data['title']}</title>
+	<meta name="baidu-site-verification" content="GwVTTZMBUAV55I4M">
+	<!-- SEO-->
+	<meta name="description" content="{$data['description']}">
+	<meta name="keywords" content="{data['keywords']}">    
+    <meta name="author" content="uimix.net">
+<!-- CSS-->
+<block name="header-link">
+
+</block> 
+    
+</head>
+<body>
+         <div id="header" style="height: 120px;">
+    <div id="site-nav">
+        <div class="site-nav-content">
+            <if condition="$_SESSION['isLogin'] neq 1">
+            	<div class="site-nav-right">
+                    <a rel="nofollow" href="{:U('Login/login')}">登录</a>
+					<a rel="nofollow" href="{:U('ZhuCe/index')}">注册</a>
+                    <a href="{:U('Jifen/index')}">积分兑换</a>
+            	</div>
+            <else />
+   				<div class="site-nav-right">
+                	<a rel="nofollow" href="">{$Think.session.master.username}<span class="message-count"></span></a>
+                    <a href="{:U('Jifen/index')}">积分兑换</a>
+					<a href="{:U('Person/index')}">MY OPPO</a>
+					<a rel="nofollow" href="{:U('Login/logout')}">退出</a>
+            	</div>
+            </if>
+            <div class="site-nav-left-png" style="float:left">
+                <a title="查看OPPO新浪微博" class="weibo-sina-png" href="" target="_top" ><img src="__PUBLIC__/Home/Jifen/Images/i-h-sinawb.png"></a>
+            	<a title="查看OPPO腾讯微博" class="weibo-qq-png" href="" target="_top" ><img src="__PUBLIC__/Home/Jifen/Images/i-h-qqwb.png"></a>
+            </div>
+            <div class="site-nav-left-text" style="float:left;width:564px">4001-666-888</div>
+        </div>
+    </div>
+    <div id="mall-nav">
+        <div class="mall-nav-content">
+			            <a href="http://www.oppo.com/" onclick="_gaq.push(['_trackEvent', 'PictureClick', 'JiFenShangCheng', 'OPPO']);"><h1 class="logo">oppo</h1></a>
+                        
+            <div id="newnav" class="mall-nav-right">
+                <div class="mall-nav-links">
+                        <a href="{:U('Index/index')}">首页</a>
+                        <a href="{:U('Jifen/index')}">积分商城</a>
+                        <!-- <a href="http://store.oppo.com/parts" onclick="_gaq.push(['_trackEvent', 'TextLineClick', 'JiFenShangCheng', 'PeiJian']);">配件</a> -->
+                        <a href="">服务</a>
+                        <a href="">体验店</a>
+                        <a href="{:U('App/Appindex')}">应用商店</a>
+                        <!-- <a href="http://www.coloros.com/" target="_top" onclick="_gaq.push(['_trackEvent', 'TextLineClick', 'JiFenShangCheng', 'ColorOS']);">ColorOS</a> -->
+                        <!-- <a href="http://www.oppo.cn/" target="_top" onclick="_gaq.push(['_trackEvent', 'TextLineClick', 'JiFenShangCheng', 'SheQu']);">社区</a> -->
+                    </div>
+                    <div class="search-form" style="display: none;">
+                        <input value="" class="mall-search" disabled="disabled" placeholder="Search" type="text">
+                        <input class="submit-search" disabled="disabled" onclick="oppo.search.action($('.mall-search').val())" type="submit">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="head-shadow"></div>
+</div>
+<block name="main-content"></block> 
+	<div id="footer">
+		<!-- <div class="foot-tags">
+			<div class="foot-tag1"></div>
+			<div class="foot-tag2"></div>
+			<div class="foot-tag3"></div>
+			<div class="foot-tag4" onclick="window.open('http://store.oppo.com/help/13')"></div>
+			<div class="foot-tag5" onclick="window.open('http://www.oppo.com/?q=service/network')"></div>
+		</div> -->
+		<div class="foot-links">
+			<ul class="foot-links-content">
+				<li>
+					<div class="title">关于我们</div>
+					<a target="_top" href="">关于OPPO</a>
+					<a target="_top" href="">新闻中心</a>
+                    <a target="_top" href="">人才招聘</a>
+				</li>
+				<li>
+					<div class="title">推荐机型 </div>
+					<a href="" target="_top">N3</a>
+					<a href="" target="_top">R5</a>
+					<a href="" target="_top">R1C</a>
+					<a href="" target="_top">Find 7</a>
+				</li>
+                                <li>
+					<div class="title">购物相关</div>
+                        <a target="_top" href="">帮助中心</a>
+                        <a target="_top" href="">周边产品</a>
+						<a target="_top" href="">OPPO体验店</a>
+						<a href="" target="_top">客户服务保障</a>
+				</li>
+				<li>
+					<div class="title">会员中心</div>
+					<a target="_top" rel="nofollow" href="">产品注册</a>
+					<a target="_top" rel="nofollow" href="{:U('ZhuCe/index')}">会员注册</a>
+					<a target="_top" rel="nofollow" href="{:U('Login/login')}">会员登录</a>
+				</li>
+				<li>
+					<div class="title">关注我们</div>
+					<a href="" class="sina" target="_top">新浪微博</a>
+					<a href="" class="qq" target="_top">腾讯微博</a>
+					<a href="" class="renren" target="_top">人人网</a>
+					<a href="" class="qzone" target="_top">QQ空间</a>
+				</li>
+				<li>
+					<div class="title">联系我们</div>
+					<div class="foot-tel">
+						<p class="foot-wz-01 foot-tel-01">4001-666-888</p>
+						<p class="foot-wz-02">7*24小时客服电话</p>
+					</div>
+					<div class="foot-zxkf">
+						<p class="foot-wz-01 foot-kf-01">在线客服</p>
+						<p class="foot-wz-02">服务时段：8:30--22:00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="foot-bt">
+				<div class="foot-bt-content">
+					<div class="left">
+						<div class="ft-logo-png"><img src="__PUBLIC__/{$data['logo']}" style="width:190px;height:31px"/></div>
+                        <div class="ft-info">
+                            {$data['copyright']}（<a href="http://www.miibeian.gov.cn/" target="_top">粤ICP备 08130115 号</a>）
+                        </div>
+					</div>
+					<div class="foot-bt-links">
+						<a href="">版权说明</a>
+						<a href="">使用协议</a>
+						<a href="">网站地图</a>
+						<a href="">友情链接</a>
+                        <a href="">联系我们</a>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!--客户在线咨询-->	
+	<div style="display: block;" id="customer-service" class="pendant">
+		<!-- <div class="kf_a">
+			<div class="pendant_k" style="display:none;">
+				<div class="tel">4001-666-888</div>
+				<div class="online">
+					<p class="online_kf">在线客服</p>
+					<p>服务时段：8:30--22:00</p>
+					<a class="zx" href="javascript:void(0);"></a>
+				</div>
+			</div>
+			<div class="kefu">
+				<a class="pendant_kf" href="javascript:;">客服</a>
+			</div>
+		</div> -->
+		
+		<div class="wx_a">
+			<div class="pendant_w" style="display: none;">OPPO官方微信</div>
+			<div class="weixin">
+				<a class="pendant_wx" href="javascript:;">微信</a>
+			</div>
+		</div>
+		<div class="top_a">
+			<div class="totop">
+				<a class="pendant_top" id="totop" href="javascript:;">返回顶部</a>
+			</div>
+		</div>        
+	</div>
+  
+
+</body>
+</html>

@@ -1,0 +1,798 @@
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<html class='no-js'>
+  <!-- Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE" />
+    <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
+    <title>{$desc['title']}</title>
+    <meta name="keywords" content="{$desc['keywords']}" />
+    <meta name="description" content="$desc['description'] " />
+    <link media="all" type="text/css" rel="stylesheet" href="__PUBLIC__/Home/css/styles.css-v=20160214150100">
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+    <!-- <script type="text/javascript" src="__PUBLIC__/Home/js/Cart.js"></script> -->
+
+
+  </head>
+
+  <body>
+  <header class='main-header'>
+  <div class='upper-area'>
+    <div class='wrapper g'>
+      <ul class='gi menu-sec'>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav>ul'>
+    <a href='http://www.oppo.cn/' target='_blank'>社区</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav>ul'>
+    <a href='http://www.coloros.com/' target='_blank'>ColorOS</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href="{:U('App/index')}" target='_blank'>软件商店</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href='http://zhushou.oppo.com/' target='_blank'>手机助手</a>
+  </li>
+  <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href='http://yun.oppo.com/' target='_blank'>云服务</a>
+  </li>
+  <!-- <li class='gi' data-desktop='.menu-sec' data-mobile='.main-menu nav>ul'>
+    <a href='http://points.oppo.com/' target='_blank'>积分商城</a>
+  </li> -->
+  <!-- <li class='gi gi-search' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a href='#' class='m-item'><img src="/media/images/icon-menu-search.png" /></a>
+  </li> -->
+</ul>      <div class='search gi'>
+  <a class='js-toggle-close' href='#'>
+    <span class='icon icon-search'></span>
+  </a>
+  <div class='search-form js-content'>
+    <div class='wrapper'>
+      <form action="{:U('Goods/index')}" class='main-form' data-desktop='.search-form .wrapper' data-mobile='.main-menu .search'>
+
+        <div class='input-button-item'><input placeholder='搜索OPPO商品' type='text' name="q"><button class='button button-primary' type='submit'>搜索</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>      <ul class='gi log-area'>
+    <if condition = "session('?login')">
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+    <a href="{:U('Home/User/index')}">
+      <span class='text'>我的OPPO</span>
+      <span class='icon icon-messages'></span>
+      <span class='n-messages'>()</span>
+    </a>
+    </li>
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+    <a class='logout' href="{:U('Home/User/logout')}">退出</a>
+    </li>
+  <else />
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+      <a href="{:U('Login/index')}">
+        登录
+      </a>
+    </li>
+    <li class='gi hasLogout' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area'>
+    <a href="{:U('Add/index')}">
+    注册
+    </a>
+    </li>
+  <li class='gi' data-desktop='.upper-area .log-area' data-mobile='.mobile-tools .log-area' id='old-version-link'>
+  </li>
+  </if>
+    </ul>      <ul class='gi menu-lang'>
+  <li class='gi gi-language' data-desktop='.menu-lang' data-mobile='.main-menu nav .nav-ul-view > ul'>
+    <a class='lang-link js-toggle-close' href='#'>Global</a>
+    <div class='languages js-content' data-desktop='.gi-language' data-mobile='.languages-panel'>
+      <div class='wrapper'>
+        <h3 class='h-epsilon'>Select your country or region</h3>
+        <ul>
+          <li>
+          <a  href='http://www.oppo.com/dz/'>Algérie</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/au/'>Australia</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/bd/'>Bangladesh</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/eg/'>Egypt</a>
+          </li>
+          <li>
+          <a href='http://www.oppo.com/en/'>Global</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/in/'>India</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/id/'>Indonesia</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ke/'>Kenya</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/my/'>Malaysia</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ma/'>Maroc</a>
+          </li>
+          <!-- <li>
+          <a  href='http://www.oppo.com/mx/'>México</a>
+          </li> -->
+          <!-- <li>
+          <a  href='http://www.oppo.com/ng/'>Nigeria</a>
+          </li> -->
+          <li>
+          <a  href='http://www.oppo.com/pk/'>Pakistan</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ph/'>Philippines</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/sg/'>Singapore</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/lk/'>Sri Lanka</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/tw/'>台灣</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/ae/'>UAE</a>
+          </li>
+          <li>
+          <a  href='http://www.oppomobile.vn/'>Việt Nam</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/th/'>ประเทศไทย</a>
+          </li>
+          <li>
+          <a  href='http://www.oppo.com/mm/'>Myanmar</a>
+          </li>
+          <li>
+          <a  class='current'  href='http://www.oppo.com/cn/'>中国</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>    </div>
+  </div>
+  <div class='bottom-area'>
+    <div class='wrapper'>
+      <a class='js-open-menu' href='#'>
+        <i class='js-open-menu-bar'></i>
+      </a>
+      <div class='shop-cart'>
+  <a href='{:U('Cart/index')}'>
+    <span class='text'>购物车</span>
+    <span class='icon icon-cart'></span>
+  </a>
+</div>      <div class='logo logo-extend'>
+        <a href='http://www.oppo.com/cn/'>
+			<img alt="" src="__PUBLIC__/{$desc['logo']}" style="width:190px;height:31px"/>
+        </a>
+        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
+          <img src="/media/images/revision/qixi/qixi-logo.gif" />
+        </a> -->
+        <!-- <a class="logo-special oppo-tj"  data-tj="www|img|revision|special-logo">
+          <img src="/media/images/revision/newyear/monkey-logo.gif" />
+        </a> -->
+      </div>
+      <a class='js-open-user' href='#'>
+        <img src="__PUBLIC__/Home/images/icon-menu-user.png" alt="">
+      </a>
+      <div class='main-menu'>
+        <!-- <div class='mobile-tools'>
+          <a class='js-close-menu' href='#'>
+            <img alt='' src='/cn/media/images/icon-menu-close.png' />
+          </a>
+          <ul class='g log-area'></ul>
+        </div> -->
+        <div class='search'></div>
+        <nav>
+  <div class='nav-ul-view'>
+  <ul class='menu g'>
+    <li class='gi
+    '>
+      <a class='m-item' href="{:U('Index/index')}">
+        <span>首页</span>
+      </a>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href="{:U('Goods/index')}">
+        <span>产品</span>
+      </a>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href="{:U('News/index')}">
+        品牌
+              </a>
+          </li>
+    <li class='gi
+        is-active
+        '>
+      <a class='m-item' href="{:U('Goods/index')}">
+        <span>在线商城</span>
+        <span class='js-toggle-submenu toggle'></span>
+      </a>
+      <ul class='sub-menu'>
+        <li>
+          <a href="{:U('Goods/index')}">手机</a>
+        </li>
+        <li>
+          <a href="{:U('Part/index')}">配件</a>
+        </li>
+        <li>
+          <a href='#'>购物指南</a>
+        </li>
+        <li>
+          <a href="{:U('ScoreShop/index')}" target='_blank'>积分商城</a>
+        </li>
+      </ul>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href="{:U('Store/index')}">
+        体验店
+      </a>
+    </li>
+    <li class='gi'>
+      <a class='m-item' href='#'>
+        服务
+              </a>
+    </li>
+        </ul>
+  </div>
+
+</nav>
+      </div>
+      <div class='user-menu'>
+<div class='relative'>
+  <ul>
+    <li class='user-menu-login'>
+      <a href="{:U('Order/centerindex')}">我的订单</a>
+    </li>
+    <li class='user-menu-login'>
+      <a href="{:U(User/detail)}">账户信息</a>
+    </li>
+    <li class='user-menu-login'>
+      <a href="">配送地址</a>
+    </li>
+    <li class='user-menu-login user-menu-message'>
+      <a href="#">系统消息</a>
+    </li>
+    <li class='user-menu-login user-menu-cart'>
+      <a href="">购物车</a>
+    </li>
+    <li class='user-menu-login user-menu-toLogin'>
+      <a href="{:U('Login/index')}">
+        登录
+      </a>
+    </li>
+    <li class='user-menu-logout'>
+      <a href="{:('User/logout')}">退出</a>
+    </li>
+  </ul>
+</div>
+</div>    </div>
+  </div>
+  <div class='nav-sub-menu'>
+  <div class='relative'></div>
+</div>
+<div class='nav-search-mask'></div>
+<div class='nav-search'>
+  <div class='nav-search-container'>
+    <div class='nav-search-content'>
+      <div class='nav-search-input'>
+        <form action='http://www.opposhop.cn/products' class='main-form'>
+          <input placeholder='搜索OPPO商品' type='text' name="q">
+          <button class='button' type='submit'>搜索</button>
+          <a href='#' class='nav-search-close'>取消</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>  <div class="languages-panel"></div>
+</header>
+
+      <main class="main-content user">
+    <div class="wrapper">
+      <ul class="breadcrumb">
+  <li>
+    <a href="{:U('Index/index')}">
+      首页
+      <span>/</span>
+    </a>
+  </li>
+            <li>
+                  <a href="{:U('User/index')}">
+            我的OPPO
+            <span>/</span>
+          </a>
+              </li>
+          <li>
+                  我的订单
+              </li>
+      </ul>
+      <div class="myOppo-menu">
+  <h1 class="h-gamma">我的订单</h1>
+  <ul class="navigation">
+    <li class="">
+      <a href="{:U('User/index')}">个人首页</a>
+    </li>
+    <li class="">
+      <a href="{:U('User/userdetail')}">账户信息</a>
+    </li>
+    <li class="">
+      <a href="{:U('Address/index')}">配送地址</a>
+    </li>
+    <li class="is-active">
+      <a href="{:U('Order/centerindex')}">我的订单</a>
+    </li>
+    <li class="">
+      <a href="#">系统消息</a>
+    </li>
+    <li class="">
+      <a href="#">优惠券</a>
+    </li>
+  </ul>
+</div>
+      <div class='g slab-white-border order'>
+        <div class='g brick-shadow order-list-top clearfix'>
+  <div class='gi one-whole desk-three-quarters pull-left'>
+    <div class="one-whole lap-width-auto">
+      <input type="hidden" id="order-number" value="160307224615834">
+      <span>订单编号：<strong>{$data['0']['code']}</strong></span>
+    </div>
+    <if condition="$data['0']['pay'] neq 1 and $data['0']['status'] neq 1">
+    <div class="one-whole lap-width-auto">
+      <span>订单状态：未付款</span>
+    </div>
+    <div class='gi one-whole lap-width-auto'>
+      <div class='gi pull-left'>
+                <a class='button button-s' href="{:U('Order/centerpay',array('id'=>$data['0']['id'],'money'=>$data['0']['money']))}">立即支付</a>
+              </div>
+      <div class='gi pull-left'>
+                <a class='box-link' href="{:U('Order/del',array('id'=>$data['0']['id']))}">取消订单</a>
+              </div>
+    </div>
+    <else />
+    <if condition="$data['0']['status'] eq 1">
+    <div class="one-whole lap-width-auto">
+      <span>订单状态：已取消</span>
+    </div>
+    <else />
+    <div class="one-whole lap-width-auto">
+      <span>订单状态：已付款</span>
+    </div>
+    </if>
+    </if>
+  </div>
+  <div class='gi one-whole desk-one-quarter pull-left desk-text-align-right'>
+    <span>下单时间：<?php date_default_timezone_set('PRC');echo date('Y-m-d H:i:s',$data['0']['otime']); ?></span>
+  </div>
+</div>
+
+<div class='order-list'>
+  <div class='order-summary'>
+    <div class='order-show-item one-whole lap-one-half desk-one-half'>
+      <div class='title'>收货信息:</div>
+      <div class="row">收&nbsp;&nbsp;件&nbsp;&nbsp;人：{$data['0']['address']['people']}</div>
+      <div class="row">收货地址：{$data['0']['address']['address']}</div>
+      <div class="row">联系电话：{$data['0']['address']['phone']}</div>
+    </div>
+    <div class='order-show-item one-whole lap-one-half desk-one-half'>
+      <div class='title'>支付及配送信息：</div>
+      <div class='row'>支付方式：在线支付</div>
+      <div class='row'>配送方式：顺丰速递</div>
+      <div class='row'>配送状态：<span class='color-primary'>{$data['0']['ems']==1 ? '已发货' : '未发货'}</span></div>
+      <div class='row'>支付状态：{$data['0']['pay']==1 ? '已支付' : '未支付'}</div>
+      <div class='row'>发票抬头：{$data['0']['fapiao']}</div>
+          </div>
+  </div>
+</div>
+
+<div class='g clearfix'>
+  <div class='order-product-list brick-shadow one-whole desk-two-thirds pull-left'>
+  <foreach name="goods" item="vo">
+    <div class='order-good-title'>商品清单：</div>
+        <div class='goods-list'>
+          <div class='goods-list-show'>
+            <a class='goods-list-image' href="#" target='_blank'>
+              <img src="__PUBLIC__/{$vo['pic']}">
+            </a>
+          </div>
+          <div class='goods-list-detail'>
+              <div class="goods-list-info goods-list-main">
+              <div class='goods-list-description'>
+                <h4 class='heading'>
+                  <a href="#" target='_blank'>{$vo['gname']}
+                  </a>
+                </h4>
+                <p>{$vo['color']}</p>
+              </div>
+              <div class="goods-list-quantity"><strong>×{$vo['num']}</strong></div>
+              <div class='goods-list-price'><strong>￥{$vo['num']*$vo['price']}</strong></div>
+            </div>                                                          
+          </div>
+        </div>
+  </foreach>                      
+  </div>
+
+  <div class='total-price slab-extra-light gi one-whole desk-one-third'>
+    <div class='title hidden'>您的订单</div>
+    <ul>
+      <li>
+        <span class='product'>商品数量：</span>
+        <span class='amount'>{$data['0']['count']}</span>
+      </li>
+      <li>
+        <span class='product'>总价：</span>
+        <span class='amount'>￥{$data['0']['money']}</span>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <span class='product'>邮费：</span>
+        <span class='amount'>+ ￥0.00</span>
+      </li>
+      <li>
+        <span class='product'>手续费：</span>
+        <span class='amount'>+ ￥0.00</span>
+      </li>
+      <li>
+        <span class='product'>优惠：</span>
+        <span class='amount'>- ￥0.00</span>
+      </li>
+    </ul>
+    <div class='total'>
+      <span class='label'>应付总额：</span>
+      <span class='price'>￥{$data['0']['money']}</span>
+    </div>
+    <if condition="$data['0']['pay'] neq 1 and $data['0']['status'] neq 1">
+        <div class="total one-whole desk-text-align-right">
+      <a class='button button-s' href="{:U('Order/centerpay',array('id'=>$data['0']['id'],'money'=>$data['0']['money']))}">立即支付</a>
+    </div>
+    </if>
+          </div>
+</div>
+
+<div class='form-actions brick-shadow lap-invisible'>
+  <div class='form-actions-left'>
+    <a class='button-light' href="{:U('Order/centerIndex')}">返回订单列表</a>
+  </div>
+</div>
+      </div>
+    </div>
+  </main>
+  <div id='return-confirm' class='hidden'>
+			<div class="mask-common"></div>
+			<div class="dialog-common dialog-box-common">
+				<div class="dialog-container">
+					<a class="dialog-close-common">×</a>
+					<div class="dialog-content-common">
+												<div class="field">
+							<h4 class='dialog-title-common'>您确定要提交退换货申请吗？</h4>
+						</div>
+																		<div class="dialog-common-content">
+												</div>
+												<div class="field dialog-btn">
+							<div class="g g-wrapper-s">
+																<div class="gi lap-one-half">
+									<a class='button button-one'>确定</a>
+								</div>
+																								<div class="gi lap-one-half">
+									<a class='button-light button-two'>取消</a>
+								</div>
+															</div>
+						</div>
+																	</div>
+				</div>
+			</div>
+		</div>
+	  <div id='return-error' class='hidden'>
+			<div class="mask-common"></div>
+			<div class="dialog-common dialog-box-common">
+				<div class="dialog-container">
+					<a class="dialog-close-common">×</a>
+					<div class="dialog-content-common">
+																		<div class="dialog-common-content">
+												</div>
+																		<div class="field dialog-btn">
+							<div class="g g-wrapper-s">
+								<div class="gi lap-one-whole">
+									<a class='button button-one-whole'>好的</a>
+								</div>
+							</div>
+						</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	  <div id='return-already' class='hidden'>
+			<div class="mask-common"></div>
+			<div class="dialog-common dialog-box-common">
+				<div class="dialog-container">
+					<a class="dialog-close-common">×</a>
+					<div class="dialog-content-common">
+												<div class="field">
+							<h4 class='dialog-title-common'>退换货申请提交成功！</h4>
+						</div>
+																		<div class="dialog-common-content">
+													<p>请及时带上需退换的商品，选择就近的售后服务中心进行退换货业务办理。</p><p>为了方便您及时办理退换货业务，建议立即<a href="http://service.oppo.cn/reserve/" target="_blank">预约售后服务中心&gt;&gt;</a></p><p>如有疑问，请查看<a href="http://www.oppo.com/cn/service/help/550?name=%E6%9C%8D%E5%8A%A1%E6%94%BF%E7%AD%96" target="_blank">退换货流程说明</a>或联系我们的<a id="btn-kf" href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank">在线客服</a>，我们将竭诚为您服务，感谢您对OPPO的支持！</p>
+												</div>
+																		<div class="field dialog-btn">
+							<div class="g g-wrapper-s">
+								<div class="gi lap-one-whole">
+									<a class='button button-one-whole'>好的</a>
+								</div>
+							</div>
+						</div>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div id='return-twice' class='hidden'>
+			<div class="mask-common"></div>
+			<div class="dialog-common dialog-box-common">
+				<div class="dialog-container">
+					<a class="dialog-close-common">×</a>
+					<div class="dialog-content-common">
+												<div class="field">
+							<h4 class='dialog-title-common'>您已提交过退换货申请!</h4>
+						</div>
+																		<div class="dialog-common-content">
+													<p>请及时带上需退换的商品，选择就近的售后服务中心进行退换货业务办理。</p><p>为了方便您及时办理退换货业务，建议立即<a href="http://service.oppo.cn/reserve/" target="_blank">预约售后服务中心&gt;&gt;</a></p><p>如有疑问，请查看<a href="http://www.oppo.com/cn/service/help/550?name=%E6%9C%8D%E5%8A%A1%E6%94%BF%E7%AD%96" target="_blank">退换货流程说明</a>或联系我们的<a id="btn-kf" href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank">在线客服</a>，我们将竭诚为您服务，感谢您对OPPO的支持！</p>
+												</div>
+																		<div class="field dialog-btn">
+							<div class="g g-wrapper-s">
+								<div class="gi lap-one-whole">
+									<a class='button button-one-whole'>好的</a>
+								</div>
+							</div>
+						</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	  <div id='dialog-confirm' class='hidden'>
+			<div class="mask-common"></div>
+			<div class="dialog-common dialog-box-common">
+				<div class="dialog-container">
+					<a class="dialog-close-common">×</a>
+					<div class="dialog-content-common">
+												<div class="field">
+							<h4 class='dialog-title-common'>您确定取消订单吗？</h4>
+						</div>
+																		<div class="dialog-common-content">
+												</div>
+												<div class="field dialog-btn">
+							<div class="g g-wrapper-s">
+																<div class="gi lap-one-half">
+									<a class='button button-one'>确定</a>
+								</div>
+																								<div class="gi lap-one-half">
+									<a class='button-light button-two'>取消</a>
+								</div>
+															</div>
+						</div>
+																	</div>
+				</div>
+			</div>
+		</div>
+	
+        <footer class='main-footer'>
+  <div class='footer-prominent-area'>
+    <div class='wrapper g'>
+      <div class='gi lap-one-third'>
+    <a class='footer-prominent-button
+          primary
+        ' href='http://www.oppo.cn/' title="OPPO社区" target='_blank'><span class='img'><img alt='OPPO社区' title="OPPO社区" src="__PUBLIC__/Home/images/201502270202233FZ8VzjUJgb2YsLn.png"></span><span class='text'>OPPO社区</span></a>
+  </div>
+    <div class='gi lap-one-third'>
+    <a class='footer-prominent-button
+          secondary
+        ' href='http://www.coloros.com/' title="ColorOS" target='_blank'><span class='img'><img alt='OPPO ColorOS' title="ColorOS" src="__PUBLIC__/Home/images/20150227020237clUXgMcj3UhukiC0.png"></span><span class='text'>ColorOS</span></a>
+  </div>
+    <div class='gi lap-one-third'>
+    <a class='footer-prominent-button
+          primary
+        ' href='http://store.oppomobile.com/' title="软件商店" target='_blank'><span class='img'><img alt='OPPO软件商店' title="软件商店" src="__PUBLIC__/Home/images/20150314030306RfYFRTucS1nB3wtQ.png"></span><span class='text'>软件商店</span></a>
+  </div>
+    </div>  </div>
+  <div class='footer-sitemap'>
+    <nav class='wrapper'>
+  <ul class='g'>
+            <li class='gi lap-one-fifth'>
+        <a class='m-item' href='http://www.oppo.com/cn/products' target="_blank">推荐机型</a>
+      <span class="toggle js-toggle-sitemap"></span>
+      <ul>
+                <li>
+          <a href='http://www.opposhop.cn/products/330.html' target='_blank'>R7s</a>
+        </li>
+                <li>
+          <a href='http://www.opposhop.cn/products/319.html' target='_blank'>R7 Plus</a>
+        </li>
+                <li>
+          <a href='http://www.opposhop.cn/products/288.html' target='_blank'>R7</a>
+        </li>
+                <li>
+          <a href='http://www.opposhop.cn/products/118.html' target='_blank'>R1C</a>
+        </li>
+                <li>
+          <a href='http://www.opposhop.cn/products/112.html' target='_blank'>N1 mini</a>
+        </li>
+              </ul>
+    </li>
+        <li class='gi lap-one-fifth'>
+        <a class='m-item' href='http://www.opposhop.cn/' target="_blank">在线购买</a>
+      <span class="toggle js-toggle-sitemap"></span>
+      <ul>
+                <li>
+          <a href='http://www.opposhop.cn/products?is_promotion=0&category=1' target='_blank'>手机</a>
+        </li>
+                <li>
+          <a href='http://www.opposhop.cn/products?is_promotion=0&category=2' target='_blank'>配件</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/service/help?name=购买帮助' target='_blank'>购物指南</a>
+        </li>
+                <li>
+          <a href='http://points.oppo.com/' target='_blank'>积分商城</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/service/help/614?name=打假维权' target='_blank'>官方授权网店</a>
+        </li>
+              </ul>
+    </li>
+        <li class='gi lap-one-fifth'>
+        <a class='m-item' href='http://www.oppo.com/cn/service' target="_blank">服务</a>
+      <span class="toggle js-toggle-sitemap"></span>
+      <ul>
+                <li>
+          <a href='http://www.oppo.com/cn/service/help?name=购买帮助' target='_blank'>购买帮助</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/service/help/360?name=购买帮助' target='_blank'>物流查询</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/service/faq' target='_blank'>常见问题</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/service/help?name=服务政策' target='_blank'>服务政策</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/service/map' target='_blank'>服务网点查询</a>
+        </li>
+              </ul>
+    </li>
+        <li class='gi lap-one-fifth'>
+        <a class='m-item' href='http://points.oppo.com/' target="_blank">会员相关</a>
+      <span class="toggle js-toggle-sitemap"></span>
+      <ul>
+                <li>
+          <a href='http://my.oppo.com/auth/login' target='_blank'>会员登录</a>
+        </li>
+                <li>
+          <a href='http://my.oppo.com/auth/register' target='_blank'>会员注册</a>
+        </li>
+                <li>
+          <a href='http://points.oppo.com/' target='_blank'>积分兑换</a>
+        </li>
+              </ul>
+    </li>
+        <li class='gi lap-one-fifth'>
+        <a class='m-item' href='http://www.oppo.com/cn/blogs' target="_blank">OPPO品牌</a>
+      <span class="toggle js-toggle-sitemap"></span>
+      <ul>
+                <li>
+          <a href='http://www.oppo.com/cn/blogs/about' target='_blank'>关于OPPO</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/blogs?group_name=资讯' target='_blank'>资讯</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/photogallery' target='_blank'>摄影作品</a>
+        </li>
+                <li>
+          <a href='http://www.oppo.com/cn/blogs/video' target='_blank'>我们的视频</a>
+        </li>
+              </ul>
+    </li>
+          </ul>
+</nav>  </div>
+  <div class='footer-tools'>
+    <div class='wrapper'>
+      <div class='footer-social lap-one-half desk-lap-one-third'><p>
+          <span class='text'>关注我们</span>
+          <a href='http://weibo.com/oppo' target='_blank'>
+            <span class='icon icon-weibo'></span>
+          </a>
+          <a href='#' id='footer-wx' class='relative'>
+            <span class='icon icon-wechat'></span>
+            <img src="__PUBLIC__/Home/images/wx.png" class="wx-float" alt=""> 
+          </a>
+                    <a href='http://career.oppo.com' target='_blank' class='text text-link'>加入我们</a>
+          <a href='http://www.oppo.com/cn/service/help?name=sourcing' target='_blank' class='text text-link'>采购相关</a>
+        </p>
+      </div>
+      <div class='footer-subscribe lap-one-half desk-lap-one-third align-right'>
+        <!-- <div class='g'>
+          <div class='gi lap-one-whole one-whole'>
+            <a href='#' id="btn-kf"><img src='/cn/media/images/zxkf.png' /></a>
+          </div>
+          <div class='gi footer-lap-hide one-third'><img alt='' src='/cn/media/images/m.jpg' /></div>
+        </div> -->
+        <div class="g one-whole desk-one-half lap-one-half about-contact pull-left">
+          <a id="btn-kf" href="http://oim.oppo.com/oim/chatClient/chatbox.jsp?companyID=8092&configID=890&enterurl=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2Fpreview%2Ejsp&pagereferrer=http%3A%2F%2Foim%2Emyoppo%2Ecom%2Foim%2FembedScript%2Ejsp%3Ft%3D1517&k=1" target="_blank">
+          <div class="about-contact-icon">
+            <span class="icon icon-chat"></span>
+          </div>
+          <div class="about-contact-info">
+            <h4 class='h-delta'>
+              <span class="highlight">在线客服</span>
+              <span class="icon icon-arrow"></span>
+            </h4>
+            <p>人工服务：8:30~22:00</p>
+            <p>24小时智能机器人服务</p>
+          </div>
+          </a>
+      </div>
+      <div class="g one-whole desk-one-half lap-one-half about-contact pull-left second-about-contact">
+            <div class="about-contact-icon">
+              <span class="icon icon-tel"></span>
+            </div>
+            <div class="about-contact-info">
+              <h4 class='h-delta'>
+                <span class="highlight">4001-666-888</span>
+              </h4>
+              <p style="">7*24小时客服电话</p>
+            </div>
+        </div>
+      </div>
+      <!-- <div class='footer-subscribe lap-one-half desk-lap-one-third'>
+        <form action='#' class='main-form'>
+          <div class='input-button-item'><input placeholder='输入Email订阅我们的最新动态' type='text'>
+          <button class='button button-primary' type='submit'>订 阅</button>
+          </div>
+        </form>
+      </div> -->
+    </div>
+  </div>
+  <div class='footer-info'>
+    <div class='wrapper'>
+      <p>{$desc['copyright']}</p>
+    </div>
+  </div>
+</footer>
+    
+    <div class='navi-scroll'>
+  <div class="navi-scroll-content">
+    <a href="javascript:;" class="scroll-top-btn"><span>回到顶部</span><i></i></a>
+    <a href="http://www.wenjuan.com/s/ENb67n/" target="_blank" class="survey-btn survey-btn-normal"><span>意见反馈</span><i></i></a>
+    <a href="http://www.wenjuan.com/s/V7bume6/" class="survey-btn survey-btn-mobile"><span>意见反馈m</span><i></i></a>
+  </div>
+</div>
+    <!--<script src="__PUBLIC__/Home/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/Home/js/jquery.lazyload.js"></script>
+    <script src="__PUBLIC__/Home/js/underscore-min.js"></script>
+    <script src="__PUBLIC__/Home/js/es5-shim.js"></script>
+    <script src="__PUBLIC__/Home/js/base64.js"></script>
+    <script src="__PUBLIC__/Home/js/custom_form.js-v=20150914144728"></script>
+    <script src="__PUBLIC__/Home/js/jquery.countdown.min.js"></script>
+    <script src="__PUBLIC__/Home/js/slick.js"></script>
+    <script src="__PUBLIC__/Home/js/responsive.js"></script>
+    <script src="__PUBLIC__/Home/js/picturefill.js"></script>
+    <script src="http://www.opposhop.cn/lib/patterns/patterns.js"></script>
+    <script src="http://www.opposhop.cn/lib/patterns/prism.js"></script> 
+    <script src="__PUBLIC__/Home/js/scripts.js-v=201511041533"></script>    
+    <script src="__PUBLIC__/Home/js/opposhop.js"></script>-->
+    
+</body>
+

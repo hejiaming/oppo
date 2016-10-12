@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+作者：LinfengYe
+时间：2015-04-23
+描述：修改为手机助手推广大图CSS
+*/
+.av{position:relative;width:966px;height:367px;margin-left:2px;margin-top:11px;background:#ccc;background:url(../images/sjzs_banner.png) no-repeat;}
+.av .sjzs_div {
+	width:199px;
+	height:65px;
+	position:absolute;
+	top:260px;
+	left:163px;
+	z-index:1;
+}
+
+.sjzs_div a {
+	display: block;
+	width:199px;
+	height:65px;
+	background:url('../images/sjzs_btn.png') 0 0 no-repeat;
+}
+
+.sjzs_div a:hover {
+	display: block;
+	width:199px;
+	height:65px;
+	background:url('../images/sjzs_btn.png') 0px -65px no-repeat;
+}
+
+.sjzs_div a:active {
+	display: block;
+	width:199px;
+	height:65px;
+	background:url('../images/sjzs_btn.png') 0px -130px no-repeat;	
+}
+/*
+作者：LinfengYe
+时间：2015-04-23
+描述：修改为手机助手推广大图CSS
+*/
+
+
+/* 广告栏及两个应用推荐 */
+/*.av{position:relative;width:966px;height:209px;margin-left:2px;margin-top:11px;background:url(../images/ad_bg_new.png) no-repeat;}*/
+.av_left{position:absolute;width:665px;height:203px;float:left;top:2px;left:3px;background:#dddddd;display:inline;overflow:hidden;z-index:1;_zoom:1;}
+.img_lists{width:13456px;height:100%; }
+.img_lists li{float:left;width:665px;height:203px;}
+.img_lists li img{width:100%;height:100%;}
+	/*对应图片轮播下面的点*/
+	.img_dot{position:absolute;left:300px;bottom:10px;z-index:1000;_zoom:1;}
+	.img_dot li {float:left;display:inline;}
+	.img_dot li span {display:block;width:23px;height:23px;background:url(../images/dot.png);
+	_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/dot.png');cursor:pointer;}
+	.img_dot li.nownav span{background:url(../images/dot-now.png);
+	_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/dot-now.png')}
+	/*对应热门滑动下面的点*/
+	.img_dot2,.img_dot3{position:absolute;left:135px;bottom:15px;z-index:1000;_zoom:1;width:100px;}
+	.img_dot2 li,.img_dot3 li{float:left;display:inline;margin-left:10px;}
+	.img_dot2 li span,.img_dot3 li span{display:block;width:20px;height:20px;background:url(../images/dot2.png);
+	_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/dot2.png')}
+	.img_dot2 li.nownav span,.img_dot3 li.nownav span{background:url(../images/dot2-now.png);
+	_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/dot2-now.png')}
+
+/*广告栏右侧两个应用推荐*/
+.av_right{width:290px;position:absolute;height:200px;top:0px;right:5px;display:inline;}
+.ar_title{width:260px;height:22px;padding:10px 0;margin-left:15px;}
+.ar_title h1 {font-size:16px;color:#000000;width:80px;height:22px;line-height:22px;background:url(../images/ad_title_icon.png) no-repeat;padding-left:26px;margin-left:85px;}
+.ar_content{width:250px;margin-left:15px;}
+.av_soft{height:90px;width:100%;padding-top:10px;}
+.av_soft_left{float:left;width:60px;}
+.av_soft_left img{width:60px;height:60px;border-radius:5px;}
+.av_soft_right h3 {padding-bottom:4px;font-size:12px;}
+.av_soft_right{float:right;width:180px;}
+.av_soft_right p{color:#4b4b4b;}
+.av_down{margin-top:5px;position:relative;}
+.av_down a{float:left;margin-left:13px;display:block;width:81px;height:26px;text-shadow:0 1px 1px #666666;background:url(../images/btns_bg.png) 0 -82px no-repeat;_background:url(../images/btns_bg_3.png);text-align:center;line-height:26px;color:#ffffff;}
+.av_down a:hover{background:url(../images/btns_bg.png) 0 -109px no-repeat;_background:url(../images/btns_bg_3_hover.png) no-repeat;text-decoration:none;color:#ffffff;}
+.av_down div {margin-top:5px;float:left;}
+
+/*外发商店下载*/
+.store_out {width:287px;height:208px;background:url(../images/store_out_bg.png);position:relative;margin-left:4px;}
+/*.store_out a{width:254px;height:56px;background:url(../images/store_out_btn.png);position:absolute;left:17px;top:115px;}
+.store_out a:hover{background:url(../images/store_out_btn.png) 0 -56px;}*/
+
+.store_out .store_out_mobile_btn a {
+    width:270px;height:67px;background:url(../images/mobile.png) no-repeat;position:absolute;left:8px;top:34px;display: block;
+}
+
+.store_out .store_out_mobile_btn a:hover {
+    width:270px;height:67px;background:url(../images/mobile.png) 0 -67px no-repeat;position:absolute;left:8px;top:34px;display: block;
+}
+
+.store_out .store_out_mobile_btn a:active {
+    width:270px;height:67px;background:url(../images/mobile.png) 0 -134px no-repeat;position:absolute;left:8px;top:34px;display: block;
+}
+
+
+
+
+.store_out .store_out_pc_btn a {
+    width:270px;height:67px;background:url(../images/pc.png);position:absolute;left:8px;top:105px;display: block;
+}
+
+.store_out .store_out_pc_btn a:hover {
+    width:270px;height:67px;background:url(../images/pc.png) 0 -67px no-repeat;position:absolute;left:8px;top:105px;display: block;
+}
+
+.store_out .store_out_pc_btn a:active {
+    width:270px;height:67px;background:url(../images/pc.png) 0 -134px no-repeat;position:absolute;left:8px;top:105px;display: block;
+}
+
+
+
+/*编辑吐血推荐*/
+.tuijian {width:100%;height:284px;margin-top:11px;margin-bottom:8px;background:url(../images/tuijian_bg.png) no-repeat;position:relative;z-index:111;}
+.tuijian_title h1{background:url(../images/tuijian_title_icon.png) no-repeat;width:72px;}
+.tuijan_content{padding:0 9px;position:absolute;left:0;top:40px;}
+.soft_tuijian{height:120px;width:188px;float:left;position:relative;}
+.st_left{float:left;width:72px;margin:20px 0 0 10px;}
+.st_left img{width:72px;height:72px;border-radius:10px;}
+.st_right{float:left;margin:25px 0 0 12px;}
+.st_right h3{padding-bottom:8px;font-size:12px;}
+.st_right p{padding-top:8px;color:#727171;}
+.tuijian_content_bg{position:relative;height:244px;width:100%;}
+.soft_hover{position:absolute;left:-2px;top:-10px;width:164px;height:134px;padding:18px 15px;background:url(../images/tuijian_hover_bg.png) no-repeat;display:none;}
+.soft_hover h3{padding-bottom:8px;color:#2b2b2b;}
+.soft_hover p{color:#4b4b4b;padding-bottom:10px;}
+.soft_hover div {padding-bottom:2px;color:#727171;}
+.soft_hover a:hover{text-decoration:none;}
+.soft_hover a.soft_hover_down {margin-left:44px;margin-top:5px;display:block;text-shadow:0 1px 1px #666666;width:81px;height:26px;background:url(../images/btns_bg.png) 0 -82px;_background:url(../images/btns_bg_3.png);text-align:center;line-height:26px;color:#ffffff;}
+.soft_hover a.soft_hover_down:hover {background:url(../images/btns_bg.png) 0 -109px;_background:url(../images/btns_bg_3_hover.png);text-decoration:none;color:#ffffff;}
+	/*hot和new的两种图标*/
+	.icon_new{position:absolute;right:-1px;top:-1px;width:45px;height:45px;background:url(../images/icon_new.png);padding:0;display:none;}
+	.icon_hot{position:absolute;right:-1px;top:-1px ;width:45px;height:45px;background:url(../images/icon_hot.png);padding:0;display:none;}
+
+/*热门应用及游戏*/
+.left{width:730px;float:left;position:relative;z-index:110;}
+.hot_soft{position:relative;width:358px;height:586px;background:url(../images/hot_bg.png);float:left;margin-left:5px;display:inline;}
+.hot_soft_title h1{background:url(../images/hot_soft_title_icon.png) no-repeat;width:72px;}
+.hot_soft_zhuanti{width:329px;height:104px;margin:12px auto 10px;}
+.hot_soft_zhuanti a{display:block;width:100%;height:100%;position:relative;cursor:pointer;}
+.hot_soft_zhuanti a b{width:100%;height:100%;background:url(../images/hot_soft_zhuanti_on.png);position:absolute;left:0;top:0;}
+	/*热门滑动的容器*/
+	.hot_soft_container,.hot_soft_container2{width:358px;height:410px;overflow:hidden;position:relative;}
+	.hot_soft_container ul,.hot_soft_container2 ul{width:3456px;height:100%;}
+	.hot_soft_container li,.hot_soft_container2 li{float:left;width:358px;height:390px;}
+.h_soft{float:left;width:103px;height:126px;margin-left:12px;text-align:center;position:relative;display:inline;}
+.h_soft_bg {position:absolute;left:0;top:0;width:100%;background:url(../images/hot_soft_hover_bg.png);background:none;}
+.h_soft img{margin:15px 0 7px 0;width:60px;height:60px;border-radius:5px;}
+.h_soft p{margin-bottom:3px;}
+.h_soft div{margin:0 auto;}
+.h_soft .down{display:none;width:81px;height:26px;background:url(../images/btns_bg.png) 0 -82px;_background:url(../images/btns_bg_3.png);margin:0 auto;color:#ffffff;text-align:center;line-height:26px;text-shadow:0 1px 1px #666666;}
+.h_soft .down:hover{background:url(../images/btns_bg.png) 0 -109px;_background:url(../images/btns_bg_3_hover.png);text-decoration:none;color:#ffffff;}
+
+.hot_game{width:358px;height:586px;background:url(../images/hot_bg.png);float:left;margin-left:4px;display:inline;position:relative;}
+.hot_game_title h1{background:url(../images/hot_game_title_icon.png) no-repeat;width:72px;}
+.hot_game_zhuanti{width:329px;height:104px;margin:12px auto 10px;}
+.hot_game_zhuanti a{display:block;width:100%;height:100%;position:relative;cursor:pointer;}
+.hot_game_zhuanti a b{width:100%;height:100%;background:url(../images/hot_soft_zhuanti_on.png);position:absolute;left:0;top:0;}
+
+
+/*专题*/
+.zhuanti {width:718px;height:258px;margin-left:6px;margin-top:7px;background:url(../images/zhuanti_bg.png) no-repeat;float:left;display:inline;}
+.zhuanti_title h1{background:url(../images/zhuanti_title_icon.png) no-repeat;width:72px;}
+.zhuanti_content {padding:30px 0 0 30px;}
+.zt_img {width:210px;height:120px;float:left;margin-right:14px;display:inline;position:relative;}
+.zt_img a.zt_img_a{position:relative;display:block;width:100%;height:100%;cursor:pointer;}
+.zt_img a b{width:210px;height:120px;display:block;background:url(../images/zt_img_on.png);position:absolute;left:0;top:0;}
+.zt_img img{width:210px;height:120px;border-radius:5px;}
+.zt_img h2{height:45px;line-height:45px;text-align:center;font-size:12px;font-weight:500;}
+
+/* 右侧排行榜及微博*/
+.right {width:239px;float:right;display:inline;position:relative;z-index:110;}
+.paihang{width:239px;height:584px;background:url(../images/paihang_bg.png);}
+.paihang_title h1{background:url(../images/paihang_title_icon.png) no-repeat;width:54px;}
+.paihang_tab {margin:10px 0 1px 44px;height:26px;}
+.paihang_tab li {float:left;width:75px;height:26px;line-height:25px;text-align:center;}
+.paihang_tab li.li_first{background:url(../images/nav_line_y.png) 100% 7px no-repeat;}
+.paihang_tab li a{display:block;width:58px;height:26px;color:#45b1bc;margin:0 auto;font-size:14px;font-weight:600;}
+/*.paihang_tab li a.tab_click{background:url(../images/nav_btn_click.png);color:#ffffff;cursor:auto;}*/
+.paihang_tab li a.tab_click{color:#666666;font-size:14px;font-weight:600;cursor:auto;}
+.paihang_tab li a.tab_click:hover{text-decoration:none;}
+.paihang_list {}
+.paihang_list li{height:37px;padding:6px 0 7px 15px;background:url(../images/paihang_line_y.png) 15px 100% no-repeat;float:left;width:224px;}
+.paihang_list li a{color:#2b2b2b;curosr:pointor;}
+.paihang_list li a:hover{color:#169795;}
+.paihang_list .pl_num{float:left;width:50px;height:36px;text-align:center;line-height:36px;font-size:14px;font-weight:600;}
+.paihang_list .pl_icon{width:32px;float:left;}
+.paihang_list .pl_icon img{width:32px;height:32px;float:left;margin-top:2px;border-radius:5px;}
+.paihang_list .pl_info{float:left;padding-left:15px;position:relative;}
+.paihang_list .pl_info p{height:20px;line-height:18px;font-size:12px;}
+
+.paihang_list a.pl_down{width:71px;height:26px;display:block;line-height:26px;text-align:center;color:#ffffff;display:none;text-shadow:0 1px 1px #666666;}
+.paihang_list a.pl_down:hover{text-decoration:none;cursor:pointer;color:#ffffff;}
+
+/*微博*/
+.weibo {width:239px;height:258px;background:url(../images/weibo_bg.png);margin-top:8px;}
+.weibo h1{line-height:22px;padding:10px 0 8px 15px;}
+

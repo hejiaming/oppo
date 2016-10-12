@@ -1,0 +1,92 @@
+<extend name="Public:head-footer" /> 
+<block name="header-link">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/Css/zhuce2.css" media="all">
+<script type="text/javascript" src="__PUBLIC__/Home/js/qtyz.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+
+</block>  
+<block name="body-header">
+<header class="main-header login-header">
+   <div class="upper-area">
+      <div class="wrapper g">
+        </div>
+   </div>
+  <div class="bottom-area">
+    <div class="wrapper">
+      <a class="js-open-menu oppo-tj" data-tj="account|link|auth|openmenu" href="#">
+        <i class="js-open-menu-bar"></i>
+      </a>
+      <div class="login-home">
+        <a href="{:U('Home/Index/index')}"><span class="icons-plus icons-plus-home"></span><span>回到首页</span></a>
+        <a href="{:U('Home/Login/login')}" class=" oppo-tj" data-tj="account|link|auth|login"><span class="icons-plus icons-plus-user"></span><span>登录</span></a>
+        <a href="{:U('Home/Add/index')}" class=" oppo-tj" data-tj="account|link|auth|register"><span class="icons-plus icons-plus-user"></span><span>注册</span></a>
+      </div>
+      <div class="logo">
+        <a href="">
+          <img alt="" src="__PUBLIC__/{$data['logo']}" style="width:190px;height:31px"/>
+        </a>
+      </div>
+      <a class="js-open-user oppo-tj" data-tj="account|link|auth|openusermenu" href="#">
+        <img alt="" src="__PUBLIC__/Home/Images/icon-menu-user.png">
+      </a>
+            <div class="main-menu">
+        <div class="search"></div>
+         </div>
+       </div>
+       </div>
+    </header>
+</block>  
+<block name="main-content">
+  <main class="main-content slab-light">
+    <div class="wrapper login register">
+      <div class="brick-bottom">
+        <ul class="steps"><li class="one active step-completed">
+            <div class="step-content">
+                            <h5 class="step-heading">填写注册信息</h5>
+              <div class="step-gradient"></div>
+            </div>
+          </li><li class="two active step-completed">
+            <div class="step-content">
+                            <h5 class="step-heading">验证信息</h5>
+              <div class="step-gradient"></div>
+            </div>
+          </li><li class="three active step-completed">
+            <div class="step-content">
+                            <h5 class="step-heading">注册成功</h5>
+              <div class="step-gradient"></div>
+            </div>
+          </li></ul>
+                    <div class="register-success">
+            <h2 class="heading">您已成为OPPO会员，感谢注册我们的网站！</h2>
+            <div class="field">
+              <p>您的注册帐号是：<strong class="text-green">{$phone}</strong>（系统自动分配的用户名：<strong class="text-green">{$usernames}</strong>）已经送您100积分，请查收。</p>
+            </div>
+            <div class="g">
+              <div class="one-half"><a href="{:U('user/index')}" class="button">查看个人信息</a></div><div class="one-half"><a href="{:U('Goods/index')}" class="button">逛OPPO在线商城</a></div>
+            </div>
+            <div class="field align-center redirect_tips">正在自动跳转到登录页中，<span  id="mes" class="register_countdown">0</span>秒后自动跳转，请稍候...</div>
+          </div>
+                                <form action="http://my.oppo.com/auth/register" class="g-hide" id="domainForm">
+              <input value="NEWOPPOSID" name="key" id="domainKey" type="hidden">
+              <input value="eyJpdiI6Ikt2b0d4NGgwZnZzQ3NLMHhUenVvWEE9PSIsInZhbHVlIjoibEtqSTNqZitBTXVuMFJMTFwvdUFTYXNyV0RuTkxoTTlYK3NBK2FXQ2VRTk9OVEt4N3lzUzdEMVgyZ2NTYWU4VTYiLCJtYWMiOiIyOWMyZmQzZWRmYWU0ZDM4NDkwMDcyZDgxZjMzY2FjNDdmMTRmYTg2MzE4NTQwNjdmY2I1MmQ2N2M1YTJlZDdjIn0=" name="value" id="domainValue" type="hidden">
+              <input value="e08601cedda47aa0735623d538e147f4" name="sign" id="domainSign" type="hidden">
+              <input value="http://www.oppo.com/cn/?utm_campaign=ztitle151009&amp;utm_medium=PinZhuan&amp;utm_source=BAIDU" name="callback" id="domainCallback" type="hidden">
+            </form>
+           </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+     // alert(222222);
+      var i = 5;
+      var intervalid;
+      intervalid = setInterval("fun()", 1000);
+      function fun() {
+        if (i == 0) {
+        window.location.href = "../../";
+        clearInterval(intervalid);
+        }
+      document.getElementById("mes").innerHTML = i;
+      i--;
+      }
+    </script>
+  </main>
+</block>  

@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)http://points.oppo.com/goods/1 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!--seo-->
+<title>{$desc['title']}</title>
+<meta name="keywords" content="{$desc['keywords']}" />
+<meta name="description" content="{$desc['description']}" />
+	<meta name="author" content="OPPO">
+	<meta name="copyright" content="OPPO">
+	<meta name="author" content="uimix.net">
+<!-- CSS-->
+<link href="__PUBLIC__/Home/css/home.css" media="screen" rel="stylesheet" type="text/css"><link href="__PUBLIC__/Home/css/points.css" media="screen" rel="stylesheet" type="text/css"><!-- JS-->
+<script id="__clicki_js_tracker_loader__" type="text/javascript" charset="UTF-8" src="__PUBLIC__/Home/js/clicki.js"></script><script src="__PUBLIC__/Home/js/hm.js"></script><script type="text/javascript" async="" src="__PUBLIC__/Home/js/45193"></script><script type="text/javascript" async="" src="__PUBLIC__/Home/js/ga.js"></script><script language="javascript" src="__PUBLIC__/Home/js/jquery-1.7.2.min.js"></script><script language="javascript" src="__PUBLIC__/Home/js/home.js"></script>    <script type="text/javascript" src="__PUBLIC__/Home/js/region.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/exchange.js"></script>
+<script src="__PUBLIC__/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <div class="bg"></div>
+     <div id="header" style="height:120px;">
+    <div id="mall-nav">
+        <div class="mall-nav-content">
+			            <a href="{:U('Home/Index/index')}" onclick="_gaq.push(['_trackEvent', 'PictureClick', 'JiFenShangCheng', 'OPPO']);"><img alt="" src="__PUBLIC__/{$desc['logo']}" style="width:190px;height:31px;margin-top: 25px;" alt="" /></a>
+                        
+            <div id="newnav" class="mall-nav-right">
+                <div class="mall-nav-links">
+                        <a href="{:U('Home/Index/index')}" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;ShouYe&#39;]);">首页</a>
+                        <a href="{:U('Goods/index')}" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;ShouJi&#39;]);">手机</a>
+                        <a href="{:U('part/index')}" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;PeiJian&#39;]);">配件</a>
+                        <a href="http://www.oppo.com/cn/service" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;FuWu&#39;]);">服务</a>
+                        <a href="{:U('Store/index')}" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;ZhuanMaiDian&#39;]);">体验店</a>
+                        <a href="{:U('App/index')}" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;YingYongShangDian&#39;]);">应用商店</a>
+                        <a href="http://www.coloros.com/" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;ColorOS&#39;]);">ColorOS</a>
+                        <a href="http://www.oppo.cn/" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;TextLineClick&#39;, &#39;JiFenShangCheng&#39;, &#39;SheQu&#39;]);">社区</a>
+                    </div>
+                    <div class="search-form" style="display:none;">
+                        <input type="text" class="mall-search" disabled="disabled" placeholder="Search">
+                        <input type="submit" class="submit-search" disabled="disabled" onclick="oppo.search.action($(&#39;.mall-search&#39;).val())">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="head-shadow"></div>
+</div>
+    <div id="content">
+        <div class="points-unit" id="points-bread-crumb">
+            <div class="points-wrapper">
+                <div class="points-rows">
+                    <a href="{:U('Index/index')}" target="_blank"><img src="__PUBLIC__/Home/images/home.png"></a><span>&nbsp;&gt;&nbsp;</span><a href="{:U('ScoreShop/index')}">积分商城</a><span>&nbsp;&gt;&nbsp;</span><span>{$data.sname}</span>
+                </div>
+            </div>
+        </div>
+        <div id="detail">
+            <div class="product-intro">
+                <div class="gallery">
+                    <div class="booth">
+                        <img src="__PUBLIC__/{$data.sphoto}">
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="name">{$data.sname}</div>
+                    
+                    <div class="tip">
+                        <!-- <p>&nbsp;</p> -->
+                        <p>&nbsp;</p>
+                    </div>
+          			<div class="points"><label>兑换积分：</label><span id="goods_points">{$data.sscore}</span><span class="pointsunit">积分</span></div>
+        
+                    <div class="btns clearfix">                    
+                		<div class="btn-append"><a href="" id="exchange" >立即兑换</a></div>
+                    </div>
+                    <div class="result2">已选择 <span id="result-num">1</span> 个礼品，需花费 <span id="result-points">{$data.sscore}</span> 积分</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-detail">
+            <div class="detail-content">
+                <div style="display:block; " class="detail-item fns">
+                    <div class="points-wrapper"><img alt="" src="__PUBLIC__/{$data.sdphoto}" style="width: 1180px; height: 880px;"></div>
+                </div>
+            </div>
+        </div>
+</div>
+            
+
+<div id="footer">
+		<!-- <div class="foot-tags">
+			<div class="foot-tag1"></div>
+			<div class="foot-tag2"></div>
+			<div class="foot-tag3"></div>
+			<div class="foot-tag4" onclick="window.open('http://store.oppo.com/help/13')"></div>
+			<div class="foot-tag5" onclick="window.open('http://www.oppo.com/?q=service/network')"></div>
+		</div> -->
+		<div class="foot-links">
+			<ul class="foot-links-content">
+				<li>
+					<div class="title">关于我们</div>
+					<a target="_blank" href="http://www.oppo.com/index.php?q=article/index&amp;cid=3">关于OPPO</a>
+					<a target="_blank" href="http://www.oppo.com/index.php?q=article/">新闻中心</a>
+                    <a target="_blank" href="http://career.oppo.com/">人才招聘</a>
+				</li>
+				<li>
+					<div class="title">推荐机型 </div>
+					<a href="http://store.oppo.com/goods/407" target="_blank">N3</a>
+					<a href="http://store.oppo.com/goods/474" target="_blank">R5</a>
+					<a href="http://store.oppo.com/goods/441" target="_blank">R1C</a>
+					<a href="http://store.oppo.com/goods/304" target="_blank">Find 7</a>
+				</li>
+                                <li>
+					<div class="title">购物相关</div>
+                        <a target="_blank" href="http://points.oppo.com/help">帮助中心</a>
+                        <a target="_blank" href="http://points.oppo.com/parts">周边产品</a>
+						<a target="_blank" href="http://www.oppo.com/index.php?q=service/oppostore/">OPPO体验店</a>
+						<a href="http://points.oppo.com/help/16" target="_blank">客户服务保障</a>
+				</li>
+				<li>
+					<div class="title">会员中心</div>
+					<a target="_blank" rel="nofollow" href="https://account.oppo.com/index.php?q=regproduct/register&amp;ddname=newregproducts">产品注册</a>
+					<a target="_blank" rel="nofollow" href="https://account.oppo.com/index.php?q=user/register&amp;back=http%3A%2F%2Fwww.oppo.com%2F%3Fq%3Dservice%2Foppostore%2Fp%2F%25E5%25B9%25BF%25E4%25B8%259C%2Fc%2F%2Fg%2F1">会员注册</a>
+					<a target="_blank" rel="nofollow" href="https://account.oppo.com/index.php?q=user/login&amp;back=http%3A%2F%2Fwww.oppo.com%2F%3Fq%3Dservice%2Foppostore%2Fp%2F%25E5%25B9%25BF%25E4%25B8%259C%2Fc%2F%2Fg%2F1">会员登录</a>
+				</li>
+				<li>
+					<div class="title">关注我们</div>
+					<a href="http://e.weibo.com/oppo" class="sina" target="_blank">新浪微博</a>
+					<a href="http://e.t.qq.com/oppo_com" class="qq" target="_blank">腾讯微博</a>
+					<a href="http://page.renren.com/600895922?checked=true" class="renren" target="_blank">人人网</a>
+					<a href="http://user.qzone.qq.com/706290143" class="qzone" target="_blank">QQ空间</a>
+				</li>
+				<li>
+					<div class="title">联系我们</div>
+					<div class="foot-tel">
+						<p class="foot-wz-01 foot-tel-01">4001-666-888</p>
+						<p class="foot-wz-02">7*24小时客服电话</p>
+					</div>
+					<div class="foot-zxkf">
+						<p class="foot-wz-01 foot-kf-01">在线客服</p>
+						<p class="foot-wz-02">服务时段：8:30--22:00</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="foot-bt">
+				<div class="foot-bt-content">
+					<div class="left">
+						<div class="ft-logo-png"><img src="__PUBLIC__/Home/images/i-f-logo.png"></div>
+                        <div class="ft-info">
+                           {$desc['copyright']}
+                        </div>
+					</div>
+					<div class="foot-bt-links">
+						<a href="http://www.oppo.com/index.php?q=service/copyright">版权说明</a>
+						<a href="http://www.oppo.com/index.php?q=service/agreement">使用协议</a>
+						<a href="http://www.oppo.com/index.php?q=service/sitemap">网站地图</a>
+						<a href="http://www.oppo.com/index.php?q=service/links">友情链接</a>
+                        <a href="http://www.oppo.com/index.php?q=service/contact">联系我们</a>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!--客户在线咨询-->	
+	<div id="customer-service" class="pendant" style="display: none;">
+
+		
+		
+		<div class="top_a">
+			<div class="totop">
+				<a class="pendant_top" id="totop" href="javascript:;">返回顶部</a>
+			</div>
+		</div>        
+	  </div>
+	  <script type="text/javascript">
+(function() {
+	$("#totop").click(function() {
+		$('body,html').animate({
+			scrollTop : 0
+		}, 100);
+		return false;
+	});
+  })();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-43523742-1']);
+	_gaq.push(['_setDomainName', 'oppo.com']);
+	_gaq.push(['_addOrganic', 'soso', 'w']);
+	_gaq.push(['_addOrganic', 'youdao', 'q']);
+	_gaq.push(['_addOrganic', 'baidu', 'word']);
+	_gaq.push(['_addOrganic', 'so', 'q']);
+	_gaq.push(['_addOrganic', '360', 'q']); 
+	_gaq.push(['_addOrganic', 'sogou', 'query']);
+	_gaq.push(['_trackPageview']);
+		
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = "__PUBLIC__/Home/js/ga.js";
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script type="text/javascript">
+(function() {
+      var c = document.createElement('script'); 
+      c.type = 'text/javascript';
+      c.async = true;
+      c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'sitemonitor.cn.miaozhen.com/boot/45193';
+      var h = document.getElementsByTagName('script')[0];
+      h.parentNode.insertBefore(c, h);
+})();
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "__PUBLIC__/Home/js/hm.js?9cb8846b548404438c81aaa02eda4f0f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+<div class="points-mask" id="mask"></div>	
+<div class="points-dialog" id="jfbg">
+    <div class="points-dialog-bar"><a href="http://points.oppo.com/goods/1#" class="dialogClose"><img src="__PUBLIC__/Home/images/dialog-close.jpg"></a>积分提示</div>
+    <div class="points-dialog-content">
+        <div class="points-dialog-unit"><img src="__PUBLIC__/Home/images/jfbg.jpg"></div>
+        <div class="points-dialog-unit points-dialog-green points-msg"></div>
+        <div class="points-dialog-unit points-dialog-green points-jfbg">很抱歉，您的积分不足！<br>购物就能赚积分哦，赶紧去官网逛逛吧！</div>
+        <div class="points-dialog-unit points-dialog-getpoints points-jfbg"><a href="http://www.oppo.com/index.php" target="_blank">赚积分去咯! »</a></div>
+    </div>
+</div>
+<div class="points-dialog" id="jfqr">
+    <div class="points-dialog-bar"><a href="http://points.oppo.com/goods/1#" class="dialogClose"><img src="__PUBLIC__/Home/images/dialog-close.jpg"></a>积分提示</div>
+    <div class="points-dialog-content">
+        <div class="points-dialog-unit points-dialog-text">已选择 <span>1</span> 个礼品，需花费 <span>1</span> 积分。</div>
+        <div class="points-dialog-unit points-dialog-text">是否马上兑换？</div>
+        <div class="points-dialog-unit"><a href="http://points.oppo.com/goods/1#" class="points-dialog-btn dialogConfirm">确定</a><a href="http://points.oppo.com/goods/1#" class="points-dialog-btn dialogCancel dialogClose">取消</a></div>
+    </div>
+</div> 
+<div class="points-dialog" id="jfcg">
+    <div class="points-dialog-bar"><a href="http://points.oppo.com/goods/1#" class="dialogClose"><img src="__PUBLIC__/Home/images/dialog-close.jpg"></a>积分提示</div>
+    <div class="points-dialog-content">
+        <div class="points-dialog-unit"><img src="__PUBLIC__/Home/images/jfcg.jpg"></div>
+        <div class="points-dialog-unit points-dialog-green">积分兑换成功</div>
+        <div class="points-dialog-unit points-dialog-text points-xn">您本次兑换成功消费 <span class="points-dialog-total">0</span> 积分，优惠券已经发放到您的个人中心。<br>您可以到 <a href="http://shop.oppo.com/user/discount" target="_blank">MY OPPO—我的订单—我的优惠券</a> 中查询使用详情。</div>
+        <div class="points-dialog-unit points-dialog-text points-sw">您本次兑换成功消费 <span class="points-dialog-total">0</span> 积分，我们将尽快为您发货，敬请期待吧！<br>查看积分使用情况，请到 <a href="http://shop.oppo.com/user/points" target="_blank">我的积分</a>。</div>
+        <div class="points-dialog-unit"><a href="http://points.oppo.com/goods/1#" class="points-dialog-btn dialogClose">确定</a></div>
+    </div>
+</div> 
+<div class="points-dialog" id="shdz">
+    <div class="points-dialog-bar"><a href="http://points.oppo.com/goods/1#" class="dialogClose"><img src="__PUBLIC__/Home/images/dialog-close.jpg"></a>收货人信息</div>
+    <div class="points-dialog-content">
+        <form id="addressForm">
+        <div class="points-dialog-unit"><span class="points-dialog-unit-required">* </span><span>收货人：&nbsp;</span><input type="text" id="shipping_receiver" name="shipping_receiver" value=""></div>
+        <div class="points-dialog-unit"><span class="points-dialog-unit-required">* </span><span>手机号：&nbsp;</span><input type="text" id="shipping_mobile" name="shipping_mobile" value=""><span>或&nbsp;&nbsp;固定电话&nbsp;&nbsp;</span><input type="text" id="shipping_phone_area_code" name="shipping_phone_area_code" value="" style="width:60px;"><span>-</span><input type="text" id="shipping_phone" name="shipping_phone" value="" style="width:120px;"><span>-</span><input type="text" id="shipping_phone_ext_code" name="shipping_phone_ext_code" value="" style="width:60px;"></div>
+        <div class="points-dialog-unit" id="pcrSelect"><span class="points-dialog-unit-required">* </span><span>所在地：&nbsp;</span><select name="shipping_province" class="pSelect"></select><select name="shipping_city" class="cSelect"></select><select name="shipping_district" class="rSelect"></select></div>
+        <div class="points-dialog-unit"><label>&nbsp;</label><input type="text" id="shipping_address" name="shipping_address" value="" style="width:260px;"></div>
+        <div class="points-dialog-text">温馨提示： OPPO目前不提供兑换礼品的更换、退货、售后等服务，不提供发票。</div>
+        <div class="points-dialog-text points-dialog-text2">请详细查阅礼品后再进行兑换。</div>
+        <div class="points-dialog-unit"><label>&nbsp;</label><a id="addressSubmit" href="http://points.oppo.com/goods/1#" class="points-dialog-btn disabled">确定</a></div>
+        <div class="points-dialog-error error-1">请输入收货人姓名</div>
+        <div class="points-dialog-error error-2">手机号码不正确</div>
+        <div class="points-dialog-error error-3">请选择所在地并填写详细的收货地址</div>
+        </form>
+    </div>
+</div> 
+<div class="dialog" style="display:none;">
+<i class="mask"></i>
+<input type="hidden" id="goodsalertbox_goodsid" value="1">
+</div>
+
+</body></html>
